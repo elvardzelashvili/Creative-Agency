@@ -1,6 +1,8 @@
 @import 'reset.scss';
 @import 'variable.scss';
 @import 'privateelements.scss';
+@import 'fonts.scss';
+
 
 header {
   margin: 0 auto;
@@ -29,6 +31,8 @@ header {
   a {
     color: $colorgrey;
     font-size: $fonts18;
+    font-family: 'Roboto-r';
+    text-transform: capitalize;
   }
   a:hover {
     background-color: transparent;
@@ -72,6 +76,7 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   align-items: center;
+  font-family: 'lato-b';
 
  }
 
@@ -85,6 +90,7 @@ h2 {
   text-transform: uppercase;
   align-items: center;
   padding-top: 400px;
+  font-family: 'Roboto-r';
 
 }
 h3 {
@@ -96,6 +102,7 @@ h3 {
   letter-spacing: 7px;
   text-transform: uppercase;
   align-items: center;
+  font-family: 'Roboto-r';
 
 }
 }
@@ -143,11 +150,15 @@ h2 {
   color: $colorgrey;
   margin-bottom: 15px;
   text-align: center;
+  font-family: 'Roboto-r';
+
 }
 p {
   width: 270px;
   font-size: 14px;
   color: $colorgrey;
+  font-family: 'Roboto-r';
+
   
 }
 }
@@ -178,6 +189,7 @@ h2
   padding-top: 75px;
   padding-bottom: 30px;
   width: 1200px;
+  font-family: 'Roboto-r';
 
 }
 .input {
@@ -189,6 +201,8 @@ h2
   font-size: $fonts18;
   background:transparent;
   padding-left: 20px;
+  font-family: 'Roboto-r';
+
 
 }
 .inputsubmit {
@@ -199,8 +213,8 @@ h2
   height: 50px;
   border-radius: 5px;
   margin-left: 30px;
-
-
+  font-family: 'Roboto-r';
+font-size: $fonts18;
 }
 }
 // container way ends
@@ -254,6 +268,8 @@ h2
   transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Roboto-r';
+
 }
  // images container ends
 
@@ -276,6 +292,8 @@ h2
     width: 1200px;
     letter-spacing: 12px;
     word-spacing: 12px;
+    font-family: 'Roboto-r';
+
 
   }
   p 
@@ -287,6 +305,8 @@ h2
     width: 1200px;
     word-spacing: 7px;
     letter-spacing: 2px;
+    font-family: 'Roboto-r';
+
 
 
   }
@@ -335,6 +355,8 @@ h2
     text-align: center;
     text-transform: uppercase;
     width: 180px;
+    font-family: 'Roboto-r';
+
   }
   
   .hovertextii {
@@ -348,6 +370,8 @@ h2
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
+    font-family: 'Roboto-r';
+
   }
 
 .iconsf {
@@ -392,6 +416,8 @@ h2
     font-size: $fonts24;
     width: 1200px;
     margin-bottom: 40px;
+    font-family: 'Roboto-r';
+
   }
   h4 {
     text-align: center;
@@ -399,6 +425,8 @@ h2
     font-size: $fonts18;
     width: 1200px;
     margin-bottom: 100px;
+    font-family: 'Roboto-r';
+
   }
   .parkcenter {
     margin: auto;
@@ -454,6 +482,8 @@ h2
   a {
     color: $colorgrey;
     text-transform: capitalize;
+    font-family: 'Roboto-r';
+
   }
   h2 {
     font-size: $fonts36;
@@ -462,6 +492,8 @@ h2
     text-align: center;
     padding-top: 40px;
     margin-bottom: 20px;
+    font-family: 'Roboto-r';
+
   }
   h3 {
     font-size: $fonts24;
@@ -469,6 +501,8 @@ h2
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 50px;
+    font-family: 'Roboto-r';
+
   }
   
   h4 {
@@ -477,6 +511,8 @@ h2
     text-transform: capitalize;
     margin-bottom: 25px;
     margin-left: 135px;
+    font-family: 'Roboto-r';
+
   }
 
   h4:hover{
@@ -519,6 +555,8 @@ h2
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Roboto-r';
+
   }
   li:last-child {
     margin-bottom: 55px;
@@ -543,6 +581,7 @@ h2
  left: 25%;
  padding-top: 50px;
  margin-bottom: 20px;
+
 .forms {
 
   width: 570px;
@@ -554,6 +593,8 @@ h2
   font-size: $fonts36;
   color: $colorwhite;
   text-align: center;
+  font-family: 'Roboto-r';
+
 }
 .iframes {
  position: relative;
@@ -566,6 +607,7 @@ ul {
 a {
   font-size: $fonts18;
   color: $colorwhite;
+  font-family: 'lato-r';
 }
 li {
   margin-bottom: 3px;
@@ -580,6 +622,9 @@ li {
   margin-top: 20px;
   color: $colorgrey;
   border: none;
+  font-family: 'Roboto-r';
+  text-transform: capitalize;
+
 }
 
 .inputsection:hover {
@@ -606,6 +651,8 @@ li {
   margin-bottom: 20px;
   color: $colorgrey;
   border: none;
+  font-family: 'Roboto-r';
+  text-transform: capitalize;
 
 }
 .inputsubmits {
@@ -616,6 +663,11 @@ li {
   border-radius: 5px;
   width: 570px;
   font-size: $fonts18;
+  font-family: 'Roboto-r';
+  text-transform: capitalize;
+  font-size: $fonts18;
+
+
 }
 .inputsubmits:hover{
   border: 1px solid $colorwhite;
@@ -623,4 +675,6 @@ li {
 
  }
 }
+
+// ends last section
 @import 'responsive.scss';
