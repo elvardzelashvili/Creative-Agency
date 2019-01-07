@@ -453,6 +453,7 @@ h2
   }
   a {
     color: $colorgrey;
+    text-transform: capitalize;
   }
   h2 {
     font-size: $fonts36;
@@ -526,4 +527,22 @@ h2
 
 // package lists ends
 
+
+// last section starts 
+.lastsection {
+  width: 100%;
+  
+}
+.centerdiv {
+ width: 830px;
+ height: 645px;
+ background: $colorgrey;
+ position: relative;
+ 
+
+
+iframe {
+ position: absolute;
+}
+}
 @import 'responsive.scss';

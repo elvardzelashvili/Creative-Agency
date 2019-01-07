@@ -383,7 +383,8 @@ header {
     width: 370px;
     height: 590px; }
   .packagelists a {
-    color: #868686; }
+    color: #868686;
+    text-transform: capitalize; }
   .packagelists h2 {
     font-size: 36px;
     color: #868686;
@@ -434,6 +435,17 @@ header {
     margin-bottom: 20px; }
   .packagelists li:last-child {
     margin-bottom: 55px; }
+
+.lastsection {
+  width: 100%; }
+
+.centerdiv {
+  width: 830px;
+  height: 645px;
+  background: #868686;
+  position: relative; }
+  .centerdiv iframe {
+    position: absolute; }
 
 @media only screen and (max-width: 992px) {
   .containerimages {
