@@ -677,4 +677,28 @@ li {
 }
 
 // ends last section
+
+// copyright
+.copyright {
+  width: 100%;
+  
+  .centercopy {
+  max-width: 1200px;
+  margin: auto;
+  height: 80px;
+  }
+ ul {
+   text-align: center;
+   @extend %flex-center;
+ }
+  li {
+  padding-right:15px;
+  margin-top:35px;
+  padding-left:15px;
+  text-align: center;
+  font-size: $fonts14;
+  font-family: 'Roboto-r';
+  border-right: 1px solid $colorgrey;
+  }
+}
 @import 'responsive.scss';

@@ -61,6 +61,12 @@ header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews,
   display: flex;
   justify-content: space-between; }
 
+.copyright ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
 @font-face {
   font-family: 'Roboto-l';
   src: url(../fonts/Roboto-Light.ttf); }
@@ -562,6 +568,23 @@ header {
   .centerdiv .inputsubmits:hover {
     border: 1px solid #FFFFFF;
     cursor: pointer; }
+
+.copyright {
+  width: 100%; }
+  .copyright .centercopy {
+    max-width: 1200px;
+    margin: auto;
+    height: 80px; }
+  .copyright ul {
+    text-align: center; }
+  .copyright li {
+    padding-right: 15px;
+    margin-top: 35px;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Roboto-r';
+    border-right: 1px solid #868686; }
 
 @media only screen and (max-width: 992px) {
   .containerimages {
