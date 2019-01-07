@@ -632,9 +632,17 @@ header {
   .dropdown-content a:hover {
     background-color: #ddd; }
   .dropdown:hover .dropdown-content {
-    display: block; } }
+    display: block; }
+  .sectionbluecenter .firstblue {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media only screen and (max-width: 480px) {
   .containerimages {
     flex-wrap: wrap;
-    justify-content: center; } }
+    justify-content: center; }
+  .dropdown-content {
+    min-width: 200px; }
+  .sectionbluecenter .firstblue {
+    height: 270px; } }
