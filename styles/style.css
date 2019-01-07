@@ -50,7 +50,7 @@ button {
 * {
   box-sizing: border-box; }
 
-header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews {
+header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews, .packagelists .packagelistscenter {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -382,6 +382,8 @@ header {
   .packagelists .package {
     width: 370px;
     height: 590px; }
+  .packagelists a {
+    color: #868686; }
   .packagelists h2 {
     font-size: 36px;
     color: #868686;
@@ -399,7 +401,7 @@ header {
     font-size: 18px;
     color: #868686;
     text-transform: capitalize;
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     margin-left: 135px; }
   .packagelists h4:hover {
     padding-top: 15px;
@@ -409,6 +411,9 @@ header {
     background: #3EC6FF;
     margin-left: 60px;
     margin-right: 60px; }
+  .packagelists h4:hover {
+    background: white;
+    color: #868686; }
   .packagelists .hoverpack {
     width: 370px;
     height: 240px;
@@ -416,10 +421,11 @@ header {
   .packagelists .hoverpack:hover {
     color: #FFFFFF;
     background: #3EC6FF; }
-  .packagelists h2:hover, .packagelists h3:hover, .packagelists h4:hover {
+  .packagelists h2:hover, .packagelists h3:hover, .packagelists .hoverpack:hover {
     color: #FFFFFF; }
   .packagelists ul {
-    text-align: center; }
+    text-align: center;
+    margin-top: 30px; }
   .packagelists li {
     font-size: 24px;
     color: #868686;

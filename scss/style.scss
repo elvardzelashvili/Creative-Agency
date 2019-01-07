@@ -445,10 +445,14 @@ h2
   max-width: 1200px;
   height: 590px;
   margin: auto;
+  @extend %flex-container;
   }
   .package {
  width: 370px;
  height: 590px;
+  }
+  a {
+    color: $colorgrey;
   }
   h2 {
     font-size: $fonts36;
@@ -470,9 +474,10 @@ h2
     font-size: $fonts18;
     color: $colorgrey;
     text-transform: capitalize;
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     margin-left: 135px;
   }
+
   h4:hover{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -483,7 +488,10 @@ h2
     margin-right: 60px;
 
   }
-
+  h4:hover {
+    background:white;
+    color: $colorgrey;
+  }
   .hoverpack {
     width: 370px;
     height: 240px; 
@@ -495,12 +503,14 @@ h2
     background: $colorhover;
  
   }
-  h2:hover, h3:hover, h4:hover {
+  h2:hover, h3:hover, .hoverpack:hover{
     color: $colorwhite;
 
   }
+ 
   ul {
     text-align: center;
+    margin-top:30px;
   }
  li {
     font-size: $fonts24;
