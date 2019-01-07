@@ -12,6 +12,14 @@
     width: 50%;
   }
   
+  header 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
   }
 
 @media only screen and (max-width: 768px) 
@@ -30,6 +38,21 @@
         align-items: center;
 
  }
+ .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 10px;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
   }
 
