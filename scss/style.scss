@@ -384,6 +384,7 @@ h2
   opacity: 0.67;
   width: 100%;
   height: 630px;
+  margin-bottom: 50px;
   
   p {
     text-align: center;
@@ -435,4 +436,84 @@ h2
 }
 
 // park section ends
+
+
+// package lists start
+.packagelists  {
+ width: 100%;
+.packagelistscenter {
+  max-width: 1200px;
+  height: 590px;
+  margin: auto;
+  }
+  .package {
+ width: 370px;
+ height: 590px;
+  }
+  h2 {
+    font-size: $fonts36;
+    color: $colorgrey;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: $fonts24;
+    color: $colorgrey;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  h4 {
+    font-size: $fonts18;
+    color: $colorgrey;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+    margin-left: 135px;
+  }
+  h4:hover{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 75px;
+    color: $colorwhite;
+    background: $colorhover;
+    margin-left: 60px;
+    margin-right: 60px;
+
+  }
+
+  .hoverpack {
+    width: 370px;
+    height: 240px; 
+    cursor: pointer;
+
+  }
+  .hoverpack:hover {
+    color: $colorwhite;
+    background: $colorhover;
+ 
+  }
+  h2:hover, h3:hover, h4:hover {
+    color: $colorwhite;
+
+  }
+  ul {
+    text-align: center;
+  }
+ li {
+    font-size: $fonts24;
+    color: $colorgrey;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  li:last-child {
+    margin-bottom: 55px;
+  }
+}
+
+// package lists ends
+
 @import 'responsive.scss';
