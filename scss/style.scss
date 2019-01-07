@@ -531,18 +531,96 @@ h2
 // last section starts 
 .lastsection {
   width: 100%;
+  position: relative;
   
 }
 .centerdiv {
  width: 830px;
  height: 645px;
  background: $colorgrey;
- position: relative;
- 
-
-
-iframe {
  position: absolute;
+ top: 40px;
+ left: 25%;
+ padding-top: 50px;
+ margin-bottom: 20px;
+.forms {
+
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+ h2 {
+  font-size: $fonts36;
+  color: $colorwhite;
+  text-align: center;
+}
+.iframes {
+ position: relative;
+ width: 100%;
+}
+ul {
+  text-align: center;
+  margin-top:30px;
+}
+a {
+  font-size: $fonts18;
+  color: $colorwhite;
+}
+li {
+  margin-bottom: 3px;
+}
+.inputsection {
+  width: 570px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: $fonts18;
+  background:$colorwhite;
+  padding-left: 20px;
+  margin-top: 20px;
+  color: $colorgrey;
+  border: none;
+}
+
+.inputsection:hover {
+ border: 1px solid $colorwhite;
+ cursor: pointer;
+ background: #A8A8A8;
+ color: $colorwhite;
+}
+.message:hover {
+  border: 1px solid $colorwhite;
+  cursor: pointer;
+  background: #A9A9A9;
+  color: $colorwhite;
+ }
+ 
+.message {
+  height: 114px;
+  width: 570px;
+  border-radius: 5px;
+  font-size: $fonts18;
+  background:$colorwhite;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $colorgrey;
+  border: none;
+
+}
+.inputsubmits {
+  background-color: $colorhover;
+  color: $colorwhite;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  width: 570px;
+  font-size: $fonts18;
+}
+.inputsubmits:hover{
+  border: 1px solid $colorwhite;
+  cursor: pointer;
+
+ }
 }
 @import 'responsive.scss';
