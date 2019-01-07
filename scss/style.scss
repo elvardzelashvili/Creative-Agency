@@ -38,14 +38,7 @@ header {
     background-color: transparent;
   }
 
-.fa {
-    color:$colorgrey;
-    font-size: 24px;
-    cursor: pointer;
-    background: none;
-    margin-left: 45px;
 
-  }
   
 }
 // header ends
@@ -701,4 +694,18 @@ li {
   border-right: 1px solid $colorgrey;
   }
 }
+
+// test
+
+
+.fa {
+  color:$colorgrey;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  margin-left: 15px;
+
+
+}
+
 @import 'responsive.scss';
