@@ -243,8 +243,7 @@ header {
 .containerteam {
   width: 100%;
   height: 760px;
-  margin-top: 60px;
-  background: aqua; }
+  margin-top: 60px; }
   .containerteam .centerteam {
     margin: auto;
     max-width: 1200px; }
@@ -296,38 +295,82 @@ header {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 180px; }
   .containerteam .hovertextii {
+    width: 180px;
     color: #FFFFFF;
     font-size: 24px;
     position: absolute;
     top: 30%;
-    left: 35%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase; }
+  .containerteam .iconsf {
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 27%; }
+  .containerteam .iconst {
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 43%; }
+  .containerteam .iconsp {
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 63%; }
 
-.iconsf {
-  height: 30px;
-  display: block;
-  position: absolute;
-  top: 70%;
-  left: 25%; }
+.bgpark {
+  background-image: url("../img/bgpark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.67;
+  width: 100%;
+  height: 630px; }
+  .bgpark p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    width: 1200px;
+    margin-bottom: 40px; }
+  .bgpark h4 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    width: 1200px;
+    margin-bottom: 100px; }
+  .bgpark .parkcenter {
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 190px; }
+  .bgpark .fb {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; }
+  .bgpark .fbi {
+    width: 30px;
+    height: 56px;
+    margin: 22px 35px; }
 
-.iconst {
-  height: 30px;
-  display: block;
-  position: absolute;
-  top: 70%;
-  left: 40%; }
+.arrowicons {
+  text-align: center; }
 
-.iconsp {
-  height: 30px;
-  display: block;
-  position: absolute;
-  top: 70%;
-  left: 60%; }
+.arrowicon {
+  width: 48px;
+  height: 48px;
+  margin-left: 20px; }
 
 @media only screen and (max-width: 992px) {
   .containerimages {
