@@ -260,7 +260,6 @@ nav a:hover {
 
 .containerimages {
   width: 100%;
-  height: 300px;
   margin-bottom: 50px; }
 
 .images {
@@ -302,7 +301,6 @@ nav a:hover {
 
 .containerteam {
   width: 100%;
-  height: 760px;
   margin-top: 60px; }
   .containerteam .centerteam {
     margin: auto;
@@ -313,7 +311,6 @@ nav a:hover {
     padding-top: 90px;
     padding-bottom: 30px;
     text-align: center;
-    width: 1200px;
     letter-spacing: 12px;
     word-spacing: 12px;
     font-family: 'Roboto-r'; }
@@ -334,7 +331,8 @@ nav a:hover {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 160px; }
   .containerteam .centerhover {
     position: relative; }
   .containerteam .teamimages {
@@ -409,14 +407,12 @@ nav a:hover {
     text-align: center;
     color: #FFFFFF;
     font-size: 24px;
-    width: 1200px;
     margin-bottom: 40px;
     font-family: 'Roboto-r'; }
   .bgpark h4 {
     text-align: center;
     color: #FFFFFF;
     font-size: 18px;
-    width: 1200px;
     margin-bottom: 100px;
     font-family: 'Roboto-r'; }
   .bgpark h4:hover,
@@ -603,7 +599,9 @@ nav a:hover {
   .sectionbluecenter .firstblue {
     height: 300px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .bgpark p {
+    font-size: 18px; } }
 
 @media only screen and (max-width: 480px) {
   .containerimages {
@@ -612,4 +610,13 @@ nav a:hover {
   .dropdown-content {
     min-width: 200px; }
   .sectionbluecenter .firstblue {
-    height: 270px; } }
+    height: 270px; }
+  .bgpark h4 {
+    margin-bottom: 70px; }
+  .bgpark .fb {
+    width: 70px;
+    height: 70px; }
+  .bgpark .fbi {
+    width: 20px;
+    height: 38px;
+    margin: 16px 25px; } }
