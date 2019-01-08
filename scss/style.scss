@@ -261,7 +261,6 @@ font-size: $fonts18;
 }
 .images {
   width:100%;
-  max-width:480px;
   height: 300px;
   display: block;
 
@@ -334,7 +333,6 @@ font-size: $fonts18;
     color: $colorgrey;
     padding-bottom: 120px;
     text-align: center;
-    width: 1200px;
     word-spacing: 7px;
     letter-spacing: 2px;
     font-family: 'Roboto-r';
@@ -347,8 +345,11 @@ p:hover,
   cursor: pointer;
 }
  .containerteamcenter {
-  @extend %flex-containernc;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   max-width: 1200px;
+  margin: auto;
 
 }
 
@@ -356,9 +357,7 @@ p:hover,
   position: relative;
  }
 .teamimages {
-  width: 270px;
   height: 274px;
-  display: block;
 
 }
 
@@ -611,120 +610,120 @@ p:hover,
 
 
 // last section starts 
-.lastsection {
-  width: 100%;
-  position: relative;
+// .lastsection {
+//   width: 100%;
+//   position: relative;
   
-}
-.centerdiv {
- width: 830px;
- height: 645px;
- background: $colorgrey;
- position: absolute;
- top: 40px;
- left: 25%;
- padding-top: 50px;
- margin-bottom: 20px;
+// }
+// .centerdiv {
+//  width: 830px;
+//  height: 645px;
+//  background: $colorgrey;
+//  position: absolute;
+//  top: 40px;
+//  left: 25%;
+//  padding-top: 50px;
+//  margin-bottom: 20px;
 
-.forms {
+// .forms {
 
-  width: 570px;
-  margin-left: auto;
-  margin-right: auto;
-}
+//   width: 570px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
- h2 {
-  font-size: $fonts36;
-  color: $colorwhite;
-  text-align: center;
-  font-family: 'Roboto-r';
+//  h2 {
+//   font-size: $fonts36;
+//   color: $colorwhite;
+//   text-align: center;
+//   font-family: 'Roboto-r';
 
-}
-h2:hover,
-a:hover,
-{
-  color: $colorhhover;
-  cursor: pointer;
-}
-.iframes {
- position: relative;
- width: 100%;
-}
-ul {
-  text-align: center;
-  margin-top:30px;
-}
-a {
-  font-size: $fonts18;
-  color: $colorwhite;
-  font-family: 'lato-r';
-}
-li {
-  margin-bottom: 3px;
-}
-.inputsection {
-  width: 570px;
-  height: 50px;
-  border-radius: 5px;
-  font-size: $fonts18;
-  background:$colorwhite;
-  padding-left: 20px;
-  margin-top: 20px;
-  color: $colorgrey;
-  border: none;
-  font-family: 'Roboto-r';
-  text-transform: capitalize;
+// }
+// h2:hover,
+// a:hover,
+// {
+//   color: $colorhhover;
+//   cursor: pointer;
+// }
+// .iframes {
+//  position: relative;
+//  width: 100%;
+// }
+// ul {
+//   text-align: center;
+//   margin-top:30px;
+// }
+// a {
+//   font-size: $fonts18;
+//   color: $colorwhite;
+//   font-family: 'lato-r';
+// }
+// li {
+//   margin-bottom: 3px;
+// }
+// .inputsection {
+//   width: 570px;
+//   height: 50px;
+//   border-radius: 5px;
+//   font-size: $fonts18;
+//   background:$colorwhite;
+//   padding-left: 20px;
+//   margin-top: 20px;
+//   color: $colorgrey;
+//   border: none;
+//   font-family: 'Roboto-r';
+//   text-transform: capitalize;
 
-}
+// }
 
-.inputsection:hover {
- border: 1px solid $colorwhite;
- cursor: pointer;
- background: #A8A8A8;
- color: $colorwhite;
-}
-.message:hover {
-  border: 1px solid $colorwhite;
-  cursor: pointer;
-  background: #A9A9A9;
-  color: $colorwhite;
- }
+// .inputsection:hover {
+//  border: 1px solid $colorwhite;
+//  cursor: pointer;
+//  background: #A8A8A8;
+//  color: $colorwhite;
+// }
+// .message:hover {
+//   border: 1px solid $colorwhite;
+//   cursor: pointer;
+//   background: #A9A9A9;
+//   color: $colorwhite;
+//  }
  
-.message {
-  height: 114px;
-  width: 570px;
-  border-radius: 5px;
-  font-size: $fonts18;
-  background:$colorwhite;
-  padding-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: $colorgrey;
-  border: none;
-  font-family: 'Roboto-r';
-  text-transform: capitalize;
+// .message {
+//   height: 114px;
+//   width: 570px;
+//   border-radius: 5px;
+//   font-size: $fonts18;
+//   background:$colorwhite;
+//   padding-left: 20px;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   color: $colorgrey;
+//   border: none;
+//   font-family: 'Roboto-r';
+//   text-transform: capitalize;
 
-}
-.inputsubmits {
-  background-color: $colorhover;
-  color: $colorwhite;
-  border: none;
-  height: 50px;
-  border-radius: 5px;
-  width: 570px;
-  font-size: $fonts18;
-  font-family: 'Roboto-r';
-  text-transform: capitalize;
-  font-size: $fonts18;
+// }
+// .inputsubmits {
+//   background-color: $colorhover;
+//   color: $colorwhite;
+//   border: none;
+//   height: 50px;
+//   border-radius: 5px;
+//   width: 570px;
+//   font-size: $fonts18;
+//   font-family: 'Roboto-r';
+//   text-transform: capitalize;
+//   font-size: $fonts18;
 
 
-}
-.inputsubmits:hover{
-  border: 1px solid $colorwhite;
-  cursor: pointer;
+// }
+// .inputsubmits:hover{
+//   border: 1px solid $colorwhite;
+//   cursor: pointer;
 
- }
-}
+//  }
+// }
 
 // ends last section
 

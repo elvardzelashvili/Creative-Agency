@@ -57,7 +57,7 @@ header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews,
   align-items: center;
   align-content: center; }
 
-.containerimages, .containerteam .containerteamcenter {
+.containerimages {
   display: flex;
   justify-content: space-between; }
 
@@ -265,7 +265,6 @@ nav a:hover {
 
 .images {
   width: 100%;
-  max-width: 480px;
   height: 300px;
   display: block; }
 
@@ -323,7 +322,6 @@ nav a:hover {
     color: #868686;
     padding-bottom: 120px;
     text-align: center;
-    width: 1200px;
     word-spacing: 7px;
     letter-spacing: 2px;
     font-family: 'Roboto-r'; }
@@ -332,13 +330,15 @@ nav a:hover {
     color: #000000;
     cursor: pointer; }
   .containerteam .containerteamcenter {
-    max-width: 1200px; }
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto; }
   .containerteam .centerhover {
     position: relative; }
   .containerteam .teamimages {
-    width: 270px;
-    height: 274px;
-    display: block; }
+    height: 274px; }
   .containerteam .overlayteam:hover {
     opacity: 0.7; }
   .containerteam .overlayteam {
@@ -517,94 +517,6 @@ nav a:hover {
   .packagelists li:last-child {
     margin-bottom: 55px; }
 
-.lastsection {
-  width: 100%;
-  position: relative; }
-
-.centerdiv {
-  width: 830px;
-  height: 645px;
-  background: #868686;
-  position: absolute;
-  top: 40px;
-  left: 25%;
-  padding-top: 50px;
-  margin-bottom: 20px; }
-  .centerdiv .forms {
-    width: 570px;
-    margin-left: auto;
-    margin-right: auto; }
-  .centerdiv h2 {
-    font-size: 36px;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: 'Roboto-r'; }
-  .centerdiv h2:hover,
-  .centerdiv a:hover {
-    color: #000000;
-    cursor: pointer; }
-  .centerdiv .iframes {
-    position: relative;
-    width: 100%; }
-  .centerdiv ul {
-    text-align: center;
-    margin-top: 30px; }
-  .centerdiv a {
-    font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'lato-r'; }
-  .centerdiv li {
-    margin-bottom: 3px; }
-  .centerdiv .inputsection {
-    width: 570px;
-    height: 50px;
-    border-radius: 5px;
-    font-size: 18px;
-    background: #FFFFFF;
-    padding-left: 20px;
-    margin-top: 20px;
-    color: #868686;
-    border: none;
-    font-family: 'Roboto-r';
-    text-transform: capitalize; }
-  .centerdiv .inputsection:hover {
-    border: 1px solid #FFFFFF;
-    cursor: pointer;
-    background: #A8A8A8;
-    color: #FFFFFF; }
-  .centerdiv .message:hover {
-    border: 1px solid #FFFFFF;
-    cursor: pointer;
-    background: #A9A9A9;
-    color: #FFFFFF; }
-  .centerdiv .message {
-    height: 114px;
-    width: 570px;
-    border-radius: 5px;
-    font-size: 18px;
-    background: #FFFFFF;
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #868686;
-    border: none;
-    font-family: 'Roboto-r';
-    text-transform: capitalize; }
-  .centerdiv .inputsubmits {
-    background-color: #3EC6FF;
-    color: #FFFFFF;
-    border: none;
-    height: 50px;
-    border-radius: 5px;
-    width: 570px;
-    font-size: 18px;
-    font-family: 'Roboto-r';
-    text-transform: capitalize;
-    font-size: 18px; }
-  .centerdiv .inputsubmits:hover {
-    border: 1px solid #FFFFFF;
-    cursor: pointer; }
-
 .copyright {
   width: 100%; }
   .copyright .centercopy {
@@ -665,7 +577,9 @@ nav a:hover {
   .containerway .inputsubmit {
     width: 50%;
     margin-left: 25%;
-    margin-top: 20px; } }
+    margin-top: 30px; }
+  .containerway .containerteamcenter {
+    justify-content: center; } }
 
 @media only screen and (max-width: 768px) {
   header {
