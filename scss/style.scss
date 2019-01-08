@@ -93,7 +93,6 @@ h3:hover,
 h2 {
   font-size: 18px;
   color: $colorwhite;
-  margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: 7px;
@@ -241,7 +240,8 @@ h2:hover
   font-family: 'Roboto-r';
 font-size: $fonts18;
 }
-.inputsubmit:hover {
+.inputsubmit:hover,
+.inputsubmits:hover, {
   background:$colorhoverinput;
 }
 }
@@ -509,7 +509,6 @@ p:hover,
  width: 100%;
 .packagelistscenter {
   max-width: 1200px;
-  height: 590px;
   margin: auto;
   @extend %flex-container;
   }
@@ -523,6 +522,9 @@ p:hover,
     font-family: 'Roboto-r';
 
   }
+   a:hover{
+     color: $colorahover;
+   }
   h2 {
     font-size: $fonts36;
     color: $colorgrey;
@@ -633,6 +635,12 @@ p:hover,
   text-align: center;
   font-family: 'Roboto-r';
 
+}
+h2:hover,
+a:hover,
+{
+  color: $colorhhover;
+  cursor: pointer;
 }
 .iframes {
  position: relative;

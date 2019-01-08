@@ -145,7 +145,6 @@ nav a:hover {
   .margincenter h2 {
     font-size: 18px;
     color: #FFFFFF;
-    margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
     letter-spacing: 7px;
@@ -253,7 +252,8 @@ nav a:hover {
     margin-left: 30px;
     font-family: 'Roboto-r';
     font-size: 18px; }
-  .containerway .inputsubmit:hover {
+  .containerway .inputsubmit:hover,
+  .containerway .inputsubmits:hover {
     background: #00bfff; }
 
 .containerimages {
@@ -450,7 +450,6 @@ nav a:hover {
   width: 100%; }
   .packagelists .packagelistscenter {
     max-width: 1200px;
-    height: 590px;
     margin: auto; }
   .packagelists .package {
     width: 370px;
@@ -459,6 +458,8 @@ nav a:hover {
     color: #868686;
     text-transform: capitalize;
     font-family: 'Roboto-r'; }
+  .packagelists a:hover {
+    color: #1e1d19; }
   .packagelists h2 {
     font-size: 36px;
     color: #868686;
@@ -536,6 +537,10 @@ nav a:hover {
     color: #FFFFFF;
     text-align: center;
     font-family: 'Roboto-r'; }
+  .centerdiv h2:hover,
+  .centerdiv a:hover {
+    color: #000000;
+    cursor: pointer; }
   .centerdiv .iframes {
     position: relative;
     width: 100%; }
