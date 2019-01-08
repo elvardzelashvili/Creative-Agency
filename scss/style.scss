@@ -27,8 +27,20 @@ header {
     height: 40px;
   }
 
+a {
+  font-size: $fonts36;
+  color: $colorhover;
+  font-family: 'Roboto-l';
+}
+}
+.span
+{
+  font-family: 'Roboto-b';
 
-  a {
+}
+ nav 
+ {
+    a {
     color: $colorgrey;
     font-size: $fonts18;
     font-family: 'Roboto-r';
@@ -36,6 +48,7 @@ header {
   }
   a:hover {
     background-color: transparent;
+    color: $colorahover;
   }
   
 }
@@ -68,8 +81,14 @@ h1 {
   text-align: center;
   align-items: center;
   font-family: 'lato-b';
-
  }
+h1:hover,
+h2:hover,
+h3:hover,
+{
+  color: $colorhhover;
+  cursor: pointer;
+}
 
 h2 {
   font-size: 18px;
@@ -152,6 +171,13 @@ p {
 
   
 }
+
+h2:hover,
+p:hover,
+{
+  color: $colorhhover;
+  cursor: pointer;
+}
 }
 // container way starts 
 
@@ -183,6 +209,12 @@ h2
   font-family: 'Roboto-r';
 
 }
+
+h2:hover
+{
+  color: $colorhhover;
+  cursor: pointer;
+}
 .input {
   width: 770px;
   height: 50px;
@@ -193,8 +225,10 @@ h2
   background:transparent;
   padding-left: 20px;
   font-family: 'Roboto-r';
-
-
+}
+.input:hover {
+  color: $colorhoverpark;
+  border: 1px solid $colorhoverinput;
 }
 .inputsubmit {
   background-color: #3EC6FF;
@@ -206,6 +240,9 @@ h2
   margin-left: 30px;
   font-family: 'Roboto-r';
 font-size: $fonts18;
+}
+.inputsubmit:hover {
+  background:$colorhoverinput;
 }
 }
 // container way ends
@@ -298,9 +335,13 @@ font-size: $fonts18;
     letter-spacing: 2px;
     font-family: 'Roboto-r';
 
-
-
   }
+h2:hover,
+p:hover,
+{
+  color: $colorhhover;
+  cursor: pointer;
+}
  .containerteamcenter {
   @extend %flex-containernc;
   max-width: 1200px;
@@ -419,6 +460,12 @@ font-size: $fonts18;
     font-family: 'Roboto-r';
 
   }
+  h4:hover,
+  p:hover,
+{
+  color: $colorhoverpark;
+  cursor: pointer;
+}
   .parkcenter {
     margin: auto;
     max-width: 1200px;
