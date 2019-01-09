@@ -551,40 +551,38 @@ p:hover,
     color: $colorgrey;
     text-transform: capitalize;
     margin-bottom: 25px;
-    margin-left: 135px;
+   text-align: center;
     font-family: 'Roboto-r';
 
   }
 
-  h4:hover{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 75px;
-    color: $colorwhite;
-    background: $colorhover;
-    margin-left: 60px;
-    margin-right: 60px;
-
-  }
-  h4:hover {
-    background:white;
-    color: $colorgrey;
-  }
+ 
   .hoverpack {
-    width: 370px;
     height: 240px; 
     cursor: pointer;
 
+
   }
-  .hoverpack:hover {
+  .hoverpack:hover h2{
     color: $colorwhite;
     background: $colorhover;
  
   }
-  h2:hover, h3:hover, .hoverpack:hover{
+  .hoverpack:hover h3 {
     color: $colorwhite;
-
+    background: $colorhover;
+ 
   }
+  .hoverpack:hover h4 {
+    color: $colorwhite;
+    background: $colorhover;
+ 
+  }
+  .hoverpack:hover {
+    color: $colorwhite;
+    background: $colorhover;
+  }
+
  
   ul {
     text-align: center;
@@ -602,6 +600,7 @@ p:hover,
   li:last-child {
     margin-bottom: 55px;
   }
+  
 }
 
 // package lists ends

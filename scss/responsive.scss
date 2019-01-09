@@ -36,8 +36,18 @@
  .containerteamcenter {
 justify-content: center;}
 }
+.packagelists 
+{
+  .packagelistscenter
+{
+ justify-content: center;
+}
+}
 
-
+.sectionbluecenter 
+  { justify-content: center;
+    
+  }
 .message {
   width: 100%;
 }
@@ -84,7 +94,7 @@ justify-content: center;}
     display: block;
   }
   .sectionbluecenter 
-  { 
+  { justify-content: space-around;;
     .firstblue {
         height: 300px;
         margin-left: auto;
@@ -136,11 +146,4 @@ p{
   }
 } 
 }
-.packagelists {
 
-
-.hoverpack
-{
-width: 300px;
-}
-}

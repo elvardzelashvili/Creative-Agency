@@ -478,28 +478,23 @@ nav a:hover {
     color: #868686;
     text-transform: capitalize;
     margin-bottom: 25px;
-    margin-left: 135px;
+    text-align: center;
     font-family: 'Roboto-r'; }
-  .packagelists h4:hover {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 75px;
-    color: #FFFFFF;
-    background: #3EC6FF;
-    margin-left: 60px;
-    margin-right: 60px; }
-  .packagelists h4:hover {
-    background: white;
-    color: #868686; }
   .packagelists .hoverpack {
-    width: 370px;
     height: 240px;
     cursor: pointer; }
+  .packagelists .hoverpack:hover h2 {
+    color: #FFFFFF;
+    background: #3EC6FF; }
+  .packagelists .hoverpack:hover h3 {
+    color: #FFFFFF;
+    background: #3EC6FF; }
+  .packagelists .hoverpack:hover h4 {
+    color: #FFFFFF;
+    background: #3EC6FF; }
   .packagelists .hoverpack:hover {
     color: #FFFFFF;
     background: #3EC6FF; }
-  .packagelists h2:hover, .packagelists h3:hover, .packagelists .hoverpack:hover {
-    color: #FFFFFF; }
   .packagelists ul {
     text-align: center;
     margin-top: 30px; }
@@ -665,6 +660,10 @@ nav a:hover {
     margin-top: 30px; }
   .containerway .containerteamcenter {
     justify-content: center; }
+  .packagelists .packagelistscenter {
+    justify-content: center; }
+  .sectionbluecenter {
+    justify-content: center; }
   .message {
     width: 100%; }
   .inputsubmits {
@@ -692,10 +691,12 @@ nav a:hover {
     background-color: #ddd; }
   .dropdown:hover .dropdown-content {
     display: block; }
-  .sectionbluecenter .firstblue {
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto; }
+  .sectionbluecenter {
+    justify-content: space-around; }
+    .sectionbluecenter .firstblue {
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto; }
   .bgpark p {
     font-size: 18px; } }
 
@@ -716,6 +717,3 @@ nav a:hover {
     width: 20px;
     height: 38px;
     margin: 16px 25px; } }
-
-.packagelists .hoverpack {
-  width: 300px; }
