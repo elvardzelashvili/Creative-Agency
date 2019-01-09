@@ -267,7 +267,7 @@ font-size: $fonts18;
 
 .container {
   position: relative;
-  width: 100%;
+  width: 480px;
 }
 
 .overlay {
@@ -614,20 +614,20 @@ p:hover,
   
 }
 .centerdiv {
- width: 830px;
+ width: 80%;
  height: 645px;
  background: $colorgrey;
  position: absolute;
  top: 40px;
- left: 25%;
+ left: 10%;
  padding-top: 50px;
  margin-bottom: 20px;
 
 .forms {
 
-  width: 570px;
-  margin-left: auto;
-  margin-right: auto;
+  width:80%;
+  position: absolute;
+  left: 10%;
 }
 
  h2 {
@@ -660,7 +660,7 @@ li {
   margin-bottom: 3px;
 }
 .inputsection {
-  width: 570px;
+  width: 80%;
   height: 50px;
   border-radius: 5px;
   font-size: $fonts18;
@@ -671,6 +671,7 @@ li {
   border: none;
   font-family: 'Roboto-r';
   text-transform: capitalize;
+  margin-left: 10%;
 
 }
 
@@ -689,7 +690,6 @@ li {
  
 .message {
   height: 114px;
-  width: 570px;
   border-radius: 5px;
   font-size: $fonts18;
   background:$colorwhite;
@@ -700,6 +700,8 @@ li {
   border: none;
   font-family: 'Roboto-r';
   text-transform: capitalize;
+  width: 80%;
+  margin-left: 10%;
 
 }
 .inputsubmits {
@@ -708,7 +710,8 @@ li {
   border: none;
   height: 50px;
   border-radius: 5px;
-  width: 570px;
+  width: 80%;
+  margin-left: 10%;
   font-size: $fonts18;
   font-family: 'Roboto-r';
   text-transform: capitalize;

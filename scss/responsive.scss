@@ -8,10 +8,7 @@
           justify-content: center;
           align-items: center;
    }  
-  .container  {
-    width: 50%;
-  }
-  
+
   header 
   {
     display: flex;
@@ -39,16 +36,8 @@
  .containerteamcenter {
 justify-content: center;}
 }
-.centerdiv {
- width: 60%;
- left: 20%;
 
-.inputsection {
-  width: 100%;
-}
-.forms {
-  width: 80%;
-}
+
 .message {
   width: 100%;
 }
@@ -146,4 +135,12 @@ p{
     margin: 16px 25px;
   }
 } 
-}}
+}
+.packagelists {
+
+
+.hoverpack
+{
+width: 300px;
+}
+}
