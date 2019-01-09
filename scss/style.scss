@@ -2,13 +2,14 @@
 @import 'variable.scss';
 @import 'privateelements.scss';
 @import 'fonts.scss';
+@import "./../bower_components/sass-autoprefixer/scss/prefixes";
+
 
 
 header {
-  margin: 0 auto;
+  @extend %marginmaxa;
   @extend %flex-container;
   align-items: center;
-  max-width: 1200px;
   margin-top: 35px;
   margin-bottom: 35px;
 
@@ -47,7 +48,7 @@ a {
     text-transform: capitalize;
   }
   a:hover {
-    background-color: transparent;
+    background-color: $colortransp;
     color: $colorahover;
   }
   
@@ -57,7 +58,7 @@ a {
 // first section start
 .containerimg {
 
-width: 100%;
+width:$width100;
 height: 944px;
 background-image: url("../img/girl.jpg");
 background-repeat: no-repeat;
@@ -68,17 +69,17 @@ opacity: 0.4;
 
 
 .margincenter {
-  max-width: 1200px;
-  width: 95%;
-  margin: auto;
+  @extend %marginmaxa;
+  width:$width95;;
+  
   
 
 h1 {
-  font-size: 48px;
+  font-size:$fonts48;
   color: $colorwhite;
   letter-spacing: 10px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: $text-alignc;
   align-items: center;
   font-family: 'lato-b';
  }
@@ -91,10 +92,10 @@ h3:hover,
 }
 
 h2 {
-  font-size: 18px;
+  font-size: $fonts48;
   color: $colorwhite;
   margin-bottom: 40px;
-  text-align: center;
+  text-align: $text-alignc;
   letter-spacing: 7px;
   text-transform: uppercase;
   align-items: center;
@@ -103,9 +104,9 @@ h2 {
 
 }
 h3 {
-  font-size: 18px;
+  font-size: $fonts48;
   color: $colorwhite;
-  text-align: center;
+  text-align: $text-alignc;
   margin-top: 40px;
   margin-bottom: 40px;
   letter-spacing: 7px;
@@ -131,12 +132,11 @@ h3 {
   // fisrts section ends
 .sectionblue 
 {
-  width: 100%;
+  width:$width100;
 }
 .sectionbluecenter {
-  max-width: 1200px;
-  margin: auto;
-  width: 95%;
+ @extend %marginmaxa;
+  width:$width95;;
   @extend %flex-container;
   
   
@@ -158,13 +158,13 @@ h2 {
   font-size: $fonts18;
   color: $colorgrey;
   margin-bottom: 15px;
-  text-align: center;
+  text-align: $text-alignc;
   font-family: 'Roboto-r';
 
 }
 p {
   width: 270px;
-  font-size: 14px;
+  font-size: $fonts14;
   color: $colorgrey;
   font-family: 'Roboto-r';
 
@@ -182,7 +182,7 @@ p:hover,
 
 .containerway {
 
-  width: 100%;
+  width:$width100;
   height: 250px;
   background-image: url("../img/way.jpg");
   background-repeat: no-repeat;
@@ -193,9 +193,8 @@ p:hover,
 
 
 .sectionnews {
-  max-width: 1200px;
-  margin: auto;
-  width: 95%;
+ @extend %marginmaxa;
+  width:$width95;;
   @extend %flex-container;
 }
 h2 
@@ -216,17 +215,17 @@ h2:hover
 }
 .divinput {
    width: 1200px;
-   width: 100%;
+   width:$width100;
   
 }
 .input {
   width: 770px;
   height: 50px;
   border: 1px solid $colorwhite;
-  border-radius: 5px;
+  border-radius: $borderr5;
   color: $colorwhite;
   font-size: $fonts18;
-  background:transparent;
+  background:$colortransp;
   padding-left: 20px;
   font-family: 'Roboto-r';
 }
@@ -240,7 +239,7 @@ h2:hover
   border: none;
   width: 370px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: $borderr5;
   font-family: 'Roboto-r';
 font-size: $fonts18;
 }
@@ -253,7 +252,7 @@ font-size: $fonts18;
 
 // images container starts
 .containerimages {
-  width: 100%;
+  width:$width100;
   @extend %flex-containernc;
   margin-bottom: 50px;
   
@@ -277,7 +276,7 @@ font-size: $fonts18;
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width:$width100;
   opacity: 0;
   transition: .4s ease;
   background-color: #3EC6FF;
@@ -296,7 +295,7 @@ font-size: $fonts18;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: $text-alignc;
   text-transform: uppercase;
   font-family: 'Roboto-r';
 
@@ -305,11 +304,10 @@ font-size: $fonts18;
 
 // team container start
 .containerteam {
-  width: 100%;
+  width:$width100;
   margin-top: 60px;
   .centerteam {
-    margin: auto;
-    max-width: 1200px;
+   @extend %marginmaxa;
   }
 
   h2 {
@@ -317,7 +315,7 @@ font-size: $fonts18;
     color: $colorgrey;
     padding-top:90px;
     padding-bottom: 30px;
-    text-align: center;
+    text-align: $text-alignc;
     letter-spacing: 12px;
     word-spacing: 12px;
     font-family: 'Roboto-r';
@@ -329,7 +327,7 @@ font-size: $fonts18;
     font-size: $fonts24;
     color: $colorgrey;
     padding-bottom: 120px;
-    text-align: center;
+    text-align: $text-alignc;
     word-spacing: 7px;
     letter-spacing: 2px;
     font-family: 'Roboto-r';
@@ -342,11 +340,8 @@ p:hover,
   cursor: pointer;
 }
  .containerteamcenter {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
+  @extend %flex-aroundwrap ;
+  @extend %marginmaxa;
   margin-bottom: 160px;
 
 
@@ -373,7 +368,7 @@ p:hover,
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width:$width100;
   opacity: 0;
   transition: .4s ease;
   background-color: #3EC6FF;
@@ -387,7 +382,7 @@ p:hover,
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: $text-alignc;
     text-transform: uppercase;
     width: 180px;
     font-family: 'Roboto-r';
@@ -441,12 +436,12 @@ p:hover,
   background-size: cover;
   background-position: center;
   opacity: 0.67;
-  width: 100%;
+  width:$width100;
   height: 630px;
   margin-bottom: 50px;
   
   p {
-    text-align: center;
+    text-align: $text-alignc;
     color: $colorwhite;
     font-size: $fonts24;
     margin-bottom: 40px;
@@ -454,7 +449,7 @@ p:hover,
 
   }
   h4 {
-    text-align: center;
+    text-align: $text-alignc;
     color: $colorwhite;
     font-size: $fonts18;
     margin-bottom: 100px;
@@ -468,8 +463,8 @@ p:hover,
   cursor: pointer;
 }
   .parkcenter {
-    margin: auto;
-    max-width: 1200px;
+    
+    @extend %marginmaxa;
     padding-top:190px; 
 
   }
@@ -492,7 +487,7 @@ p:hover,
 }
 
 .arrowicons {
-  text-align: center;
+  text-align: $text-alignc;
 }
 
 .arrowicon {
@@ -507,10 +502,9 @@ p:hover,
 
 // package lists start
 .packagelists  {
- width: 100%;
+ width:$width100;
 .packagelistscenter {
-  max-width: 1200px;
-  margin: auto;
+ @extend %marginmaxa;
   @extend %flex-container;
   }
   .package {
@@ -530,7 +524,7 @@ p:hover,
     font-size: $fonts36;
     color: $colorgrey;
     text-transform: uppercase;
-    text-align: center;
+    text-align: $text-alignc;
     padding-top: 40px;
     margin-bottom: 20px;
     font-family: 'Roboto-r';
@@ -540,7 +534,7 @@ p:hover,
     font-size: $fonts24;
     color: $colorgrey;
     text-transform: uppercase;
-    text-align: center;
+    text-align: $text-alignc;
     margin-bottom: 50px;
     font-family: 'Roboto-r';
 
@@ -551,7 +545,7 @@ p:hover,
     color: $colorgrey;
     text-transform: capitalize;
     margin-bottom: 25px;
-   text-align: center;
+   text-align: $text-alignc;
     font-family: 'Roboto-r';
 
   }
@@ -585,14 +579,14 @@ p:hover,
 
  
   ul {
-    text-align: center;
+    text-align: $text-alignc;
     margin-top:30px;
   }
  li {
     font-size: $fonts24;
     color: $colorgrey;
     text-transform: capitalize;
-    text-align: center;
+    text-align: $text-alignc;
     margin-bottom: 20px;
     font-family: 'Roboto-r';
 
@@ -608,12 +602,12 @@ p:hover,
 
 // last section starts 
 .lastsection {
-  width: 100%;
+  width:$width100;
   position: relative;
   
 }
 .centerdiv {
- width: 80%;
+ width:$width80;;
  height: 645px;
  background: $colorgrey;
  position: absolute;
@@ -632,7 +626,7 @@ p:hover,
  h2 {
   font-size: $fonts36;
   color: $colorwhite;
-  text-align: center;
+  text-align: $text-alignc;
   font-family: 'Roboto-r';
 
 }
@@ -644,10 +638,10 @@ a:hover,
 }
 .iframes {
  position: relative;
- width: 100%;
+ width:$width100;
 }
 ul {
-  text-align: center;
+  text-align: $text-alignc;
   margin-top:30px;
 }
 a {
@@ -659,9 +653,9 @@ li {
   margin-bottom: 3px;
 }
 .inputsection {
-  width: 80%;
+  width:$width80;;
   height: 50px;
-  border-radius: 5px;
+  border-radius: $borderr5;
   font-size: $fonts18;
   background:$colorwhite;
   padding-left: 20px;
@@ -689,7 +683,7 @@ li {
  
 .message {
   height: 114px;
-  border-radius: 5px;
+  border-radius: $borderr5;
   font-size: $fonts18;
   background:$colorwhite;
   padding-left: 20px;
@@ -699,7 +693,7 @@ li {
   border: none;
   font-family: 'Roboto-r';
   text-transform: capitalize;
-  width: 80%;
+  width:$width80;;
   margin-left: 10%;
 
 }
@@ -708,8 +702,8 @@ li {
   color: $colorwhite;
   border: none;
   height: 50px;
-  border-radius: 5px;
-  width: 80%;
+  border-radius: $borderr5;
+  width:$width80;;
   margin-left: 10%;
   font-size: $fonts18;
   font-family: 'Roboto-r';
@@ -729,22 +723,21 @@ li {
 
 // copyright 
 .copyright {
-  width: 100%;
+  width:$width100;
   
   .centercopy {
-  max-width: 1200px;
-  margin: auto;
+ @extend %marginmaxa;
   height: 80px;
   }
  ul {
-   text-align: center;
+   text-align: $text-alignc;
    @extend %flex-center;
  }
   li {
   padding-right:15px;
   margin-top:35px;
   padding-left:15px;
-  text-align: center;
+  text-align: $text-alignc;
   font-size: $fonts14;
   font-family: 'Roboto-r';
   border-right: 1px solid $colorgrey;
@@ -766,7 +759,7 @@ li {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: $fonts18;  
   border: none;
   outline: none;
   color: white;

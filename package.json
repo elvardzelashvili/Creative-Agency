@@ -10,7 +10,11 @@
   "description": "",
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "sass-autoprefixer": "^1.0.1"
   }
 }

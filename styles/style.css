@@ -61,11 +61,20 @@ header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews,
   display: flex;
   justify-content: space-between; }
 
+.containerteam .containerteamcenter {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
 .copyright ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
+
+header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containerteam .centerteam, .containerteam .containerteamcenter, .bgpark .parkcenter, .packagelists .packagelistscenter, .copyright .centercopy {
+  max-width: 1200px;
+  margin: auto; }
 
 @font-face {
   font-family: 'Roboto-l';
@@ -88,9 +97,7 @@ header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews,
   src: url(../fonts/Lato-Regular.ttf); }
 
 header {
-  margin: 0 auto;
   align-items: center;
-  max-width: 1200px;
   margin-top: 35px;
   margin-bottom: 35px; }
   header li {
@@ -126,9 +133,7 @@ nav a:hover {
   opacity: 0.4; }
 
 .margincenter {
-  max-width: 1200px;
-  width: 95%;
-  margin: auto; }
+  width: 95%; }
   .margincenter h1 {
     font-size: 48px;
     color: #FFFFFF;
@@ -143,7 +148,7 @@ nav a:hover {
     color: #000000;
     cursor: pointer; }
   .margincenter h2 {
-    font-size: 18px;
+    font-size: 48px;
     color: #FFFFFF;
     margin-bottom: 40px;
     text-align: center;
@@ -153,7 +158,7 @@ nav a:hover {
     padding-top: 400px;
     font-family: 'Roboto-r'; }
   .margincenter h3 {
-    font-size: 18px;
+    font-size: 48px;
     color: #FFFFFF;
     text-align: center;
     margin-top: 40px;
@@ -176,8 +181,6 @@ nav a:hover {
   width: 100%; }
 
 .sectionbluecenter {
-  max-width: 1200px;
-  margin: auto;
   width: 95%; }
   .sectionbluecenter img {
     width: 45px;
@@ -216,8 +219,6 @@ nav a:hover {
   opacity: 0.7;
   margin-bottom: 110px; }
   .containerway .sectionnews {
-    max-width: 1200px;
-    margin: auto;
     width: 95%; }
   .containerway h2 {
     color: #FFFFFF;
@@ -302,9 +303,6 @@ nav a:hover {
 .containerteam {
   width: 100%;
   margin-top: 60px; }
-  .containerteam .centerteam {
-    margin: auto;
-    max-width: 1200px; }
   .containerteam h2 {
     font-size: 36px;
     color: #868686;
@@ -327,11 +325,6 @@ nav a:hover {
     color: #000000;
     cursor: pointer; }
   .containerteam .containerteamcenter {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
     margin-bottom: 160px; }
   .containerteam .centerhover {
     position: relative; }
@@ -420,8 +413,6 @@ nav a:hover {
     color: #ccf2ff;
     cursor: pointer; }
   .bgpark .parkcenter {
-    margin: auto;
-    max-width: 1200px;
     padding-top: 190px; }
   .bgpark .fb {
     width: 100px;
@@ -446,9 +437,6 @@ nav a:hover {
 
 .packagelists {
   width: 100%; }
-  .packagelists .packagelistscenter {
-    max-width: 1200px;
-    margin: auto; }
   .packagelists .package {
     width: 370px;
     height: 590px; }
@@ -602,8 +590,6 @@ nav a:hover {
 .copyright {
   width: 100%; }
   .copyright .centercopy {
-    max-width: 1200px;
-    margin: auto;
     height: 80px; }
   .copyright ul {
     text-align: center; }
@@ -625,7 +611,7 @@ nav a:hover {
   margin-left: 30px; }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: white;

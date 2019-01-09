@@ -14,3 +14,16 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
   gulp.watch('scss/style.scss', gulp.parallel('sass'));
 });
+
+
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+ 
+gulp.task('default', () =>
+    gulp.src('src/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+);
