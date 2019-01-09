@@ -425,7 +425,8 @@ nav a:hover {
   .bgpark .fbi {
     width: 30px;
     height: 56px;
-    margin: 22px 35px; }
+    margin: 22px 35px;
+    transform: translate(-50%, -40%); }
 
 .arrowicons {
   text-align: center; }

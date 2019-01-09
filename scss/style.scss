@@ -2,7 +2,7 @@
 @import 'variable.scss';
 @import 'privateelements.scss';
 @import 'fonts.scss';
-@import "./../bower_components/sass-autoprefixer/scss/prefixes";
+// @import "./../bower_components/sass-autoprefixer/scss/prefixes";
 
 
 
@@ -477,11 +477,14 @@ p:hover,
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  
 }
   .fbi {
     width: 30px;
     height: 56px;
     margin: 22px 35px;
+    transform: translate(-50%, -40%);
+
   }
   
 }
