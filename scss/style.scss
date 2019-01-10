@@ -259,12 +259,12 @@ h2:hover
 }
 
 .container {
-  position: relative;
+  @include position (relative);;
   width: 480px;
 }
 
 .overlay {
-  position: absolute;
+  @include position (absolute);;
   top: 0;
   bottom: 0;
   left: 0;
@@ -283,7 +283,7 @@ h2:hover
 .hovertext {
   color: $colorwhite;
   font-size: $fonts18;
-  position: absolute;
+  @include position (absolute);;
   top: 80%;
   left: 45%;
   transform: translate(-50%, -50%);
@@ -339,7 +339,7 @@ p:hover,
 }
 
  .centerhover {
-  position: relative;
+  @include position (relative);;
  }
 .teamimages {
   height: 274px;
@@ -349,7 +349,7 @@ p:hover,
 }
 .overlayteam
 {
-  position: absolute;
+  @include position (absolute);;
   top: 0;
   bottom: 0;
   left: 0;
@@ -363,7 +363,7 @@ p:hover,
   .hovertexti {
     color: $colorwhite;
     font-size: $fonts18;
-    position: absolute;
+    @include position (absolute);;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -378,7 +378,7 @@ p:hover,
     width: 180px;
     color: $colorwhite;
     font-size: $fonts24;
-    position: absolute;
+    @include position (absolute);;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -390,21 +390,21 @@ p:hover,
 .iconsf {
   height: 30px;
   display: block;
-  position: absolute;
+  @include position (absolute);;
   top: 70%;
   left: 27%;
 }
 .iconst {
   height: 30px;
   display: block;
-  position: absolute;
+  @include position (absolute);;
   top: 70%;
   left: 43%;
 }
 .iconsp {
   height: 30px;
   display: block;
-  position: absolute;
+  @include position (absolute);;
   top: 70%;
   left: 63%;
 }
@@ -587,14 +587,14 @@ p:hover,
 // last section starts 
 #lastsection {
   width:$width100;
-  position: relative;
+  @include position (relative);;
   
 }
 .centerdiv {
  width:$width70;;
  height: 645px;
  background: $colorgrey;
- position: absolute;
+ @include position (absolute);;
  top: 40px;
  left: 15%;
  padding-top: 50px;
@@ -603,7 +603,7 @@ p:hover,
 .forms {
 
   width:80%;
-  position: absolute;
+  @include position (absolute);;
   left: 10%;
 }
 
@@ -621,7 +621,7 @@ a:hover,
   cursor: pointer;
 }
 .iframes {
- position: relative;
+ @include position (relative);;
  width:$width100;
 }
 ul {
@@ -740,7 +740,7 @@ li {
 
 }
 
-.dropdown .dropbtn {
+.dropdown .dr opbtn {
   font-size: $fonts18;  
   border: none;
   outline: none;
@@ -750,7 +750,7 @@ li {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  @include position (absolute);
   background-color: #f9f9f9;
   min-width: 100px;
   z-index: 1;
