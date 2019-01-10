@@ -292,8 +292,6 @@ font-size: $fonts18;
   position: absolute;
   top: 80%;
   left: 45%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: $text-alignc;
   text-transform: uppercase;
@@ -379,8 +377,6 @@ p:hover,
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: $text-alignc;
     text-transform: uppercase;
@@ -396,8 +392,6 @@ p:hover,
     position: absolute;
     top: 30%;
     left: 50%;
-     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     font-family: 'Roboto-r';
@@ -483,8 +477,7 @@ p:hover,
     width: 30px;
     height: 56px;
     margin: 22px 35px;
-    transform: translate(-50%, -40%);
-
+    transform: translate(-20%, -20%);
   }
   
 }
@@ -712,8 +705,6 @@ li {
   font-family: 'Roboto-r';
   text-transform: capitalize;
   font-size: $fonts18;
-
-
 }
 .inputsubmits:hover{
   border: 1px solid $colorwhite;
