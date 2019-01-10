@@ -56,7 +56,7 @@ a {
 // header ends
 
 // first section start
-.containerimg {
+#containerimg {
 
 width:$width100;
 height: 944px;
@@ -130,7 +130,7 @@ h3 {
 
 
   // fisrts section ends
-.sectionblue 
+#sectionblue 
 {
   width:$width100;
 }
@@ -424,7 +424,7 @@ p:hover,
 // team container ends
 
 // park section start
-.bgpark {
+#bgpark {
   background-image: url("../img/bgpark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,7 +477,6 @@ p:hover,
     width: 30px;
     height: 56px;
     margin: 22px 35px;
-    transform: translate(-20%, -20%);
   }
   
 }
@@ -497,7 +496,7 @@ p:hover,
 
 
 // package lists start
-.packagelists  {
+#packagelists  {
  width:$width100;
 .packagelistscenter {
  @extend %marginmaxa;
@@ -597,18 +596,18 @@ p:hover,
 
 
 // last section starts 
-.lastsection {
+#lastsection {
   width:$width100;
   position: relative;
   
 }
 .centerdiv {
- width:$width80;;
+ width:$width70;;
  height: 645px;
  background: $colorgrey;
  position: absolute;
  top: 40px;
- left: 10%;
+ left: 15%;
  padding-top: 50px;
  margin-bottom: 20px;
 
@@ -783,5 +782,6 @@ li {
 // .dropdown:hover .dropdown-content {
 //   display: block;
 // }
+// links 
 
 @import 'responsive.scss';

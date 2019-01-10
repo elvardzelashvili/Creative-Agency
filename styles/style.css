@@ -54,7 +54,7 @@ button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews, .packagelists .packagelistscenter {
+header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews, #packagelists .packagelistscenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +99,7 @@ header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews,
   -ms-flex-align: center;
   align-items: center; }
 
-header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containerteam .centerteam, .containerteam .containerteamcenter, .bgpark .parkcenter, .packagelists .packagelistscenter, .copyright .centercopy {
+header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containerteam .centerteam, .containerteam .containerteamcenter, #bgpark .parkcenter, #packagelists .packagelistscenter, .copyright .centercopy {
   max-width: 1200px;
   margin: auto; }
 
@@ -152,7 +152,7 @@ nav a:hover {
   background-color: transparent;
   color: #1e1d19; }
 
-.containerimg {
+#containerimg {
   width: 100%;
   height: 944px;
   background-image: url("../img/girl.jpg");
@@ -212,7 +212,7 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto; }
 
-.sectionblue {
+#sectionblue {
   width: 100%; }
 
 .sectionbluecenter {
@@ -430,7 +430,7 @@ nav a:hover {
     top: 70%;
     left: 63%; }
 
-.bgpark {
+#bgpark {
   background-image: url("../img/bgpark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -439,25 +439,25 @@ nav a:hover {
   width: 100%;
   height: 630px;
   margin-bottom: 50px; }
-  .bgpark p {
+  #bgpark p {
     text-align: center;
     color: #FFFFFF;
     font-size: 24px;
     margin-bottom: 40px;
     font-family: 'Roboto-r'; }
-  .bgpark h4 {
+  #bgpark h4 {
     text-align: center;
     color: #FFFFFF;
     font-size: 18px;
     margin-bottom: 100px;
     font-family: 'Roboto-r'; }
-  .bgpark h4:hover,
-  .bgpark p:hover {
+  #bgpark h4:hover,
+  #bgpark p:hover {
     color: #ccf2ff;
     cursor: pointer; }
-  .bgpark .parkcenter {
+  #bgpark .parkcenter {
     padding-top: 190px; }
-  .bgpark .fb {
+  #bgpark .fb {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -465,13 +465,10 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px; }
-  .bgpark .fbi {
+  #bgpark .fbi {
     width: 30px;
     height: 56px;
-    margin: 22px 35px;
-    -webkit-transform: translate(-20%, -20%);
-    -ms-transform: translate(-20%, -20%);
-    transform: translate(-20%, -20%); }
+    margin: 22px 35px; }
 
 .arrowicons {
   text-align: center; }
@@ -481,18 +478,18 @@ nav a:hover {
   height: 48px;
   margin-left: 20px; }
 
-.packagelists {
+#packagelists {
   width: 100%; }
-  .packagelists .package {
+  #packagelists .package {
     width: 370px;
     height: 590px; }
-  .packagelists a {
+  #packagelists a {
     color: #868686;
     text-transform: capitalize;
     font-family: 'Roboto-r'; }
-  .packagelists a:hover {
+  #packagelists a:hover {
     color: #1e1d19; }
-  .packagelists h2 {
+  #packagelists h2 {
     font-size: 36px;
     color: #868686;
     text-transform: uppercase;
@@ -500,59 +497,59 @@ nav a:hover {
     padding-top: 40px;
     margin-bottom: 20px;
     font-family: 'Roboto-r'; }
-  .packagelists h3 {
+  #packagelists h3 {
     font-size: 24px;
     color: #868686;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 50px;
     font-family: 'Roboto-r'; }
-  .packagelists h4 {
+  #packagelists h4 {
     font-size: 18px;
     color: #868686;
     text-transform: capitalize;
     margin-bottom: 25px;
     text-align: center;
     font-family: 'Roboto-r'; }
-  .packagelists .hoverpack {
+  #packagelists .hoverpack {
     height: 240px;
     cursor: pointer; }
-  .packagelists .hoverpack:hover h2 {
+  #packagelists .hoverpack:hover h2 {
     color: #FFFFFF;
     background: #3EC6FF; }
-  .packagelists .hoverpack:hover h3 {
+  #packagelists .hoverpack:hover h3 {
     color: #FFFFFF;
     background: #3EC6FF; }
-  .packagelists .hoverpack:hover h4 {
+  #packagelists .hoverpack:hover h4 {
     color: #FFFFFF;
     background: #3EC6FF; }
-  .packagelists .hoverpack:hover {
+  #packagelists .hoverpack:hover {
     color: #FFFFFF;
     background: #3EC6FF; }
-  .packagelists ul {
+  #packagelists ul {
     text-align: center;
     margin-top: 30px; }
-  .packagelists li {
+  #packagelists li {
     font-size: 24px;
     color: #868686;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Roboto-r'; }
-  .packagelists li:last-child {
+  #packagelists li:last-child {
     margin-bottom: 55px; }
 
-.lastsection {
+#lastsection {
   width: 100%;
   position: relative; }
 
 .centerdiv {
-  width: 80%;
+  width: 70%;
   height: 645px;
   background: #868686;
   position: absolute;
   top: 40px;
-  left: 10%;
+  left: 15%;
   padding-top: 50px;
   margin-bottom: 20px; }
   .centerdiv .forms {
@@ -718,6 +715,9 @@ nav a:hover {
 
 .containerteam p {
   font-size: 18px; }
+
+.containerteam .containerteam .centerhover {
+  margin-top: 20px; }
 
 @media only screen and (max-width: 768px) {
   header {
