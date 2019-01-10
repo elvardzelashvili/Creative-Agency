@@ -2,7 +2,8 @@
 @import 'variable.scss';
 @import 'privateelements.scss';
 @import 'fonts.scss';
-// @import "./../bower_components/sass-autoprefixer/scss/prefixes";
+@import 'mixins.scss';
+
 
 
 
@@ -45,7 +46,7 @@ a {
     color: $colorgrey;
     font-size: $fonts18;
     font-family: 'Roboto-r';
-    text-transform: capitalize;
+    @include text-transform (capitalize);
   }
   a:hover {
     background-color: $colortransp;
@@ -77,8 +78,8 @@ opacity: 0.4;
 h1 {
   font-size:$fonts48;
   color: $colorwhite;
-  letter-spacing: 10px;
-  text-transform: uppercase;
+  letter-spacing: $letter-spacing10;
+   @include text-transform (uppercase);
   text-align: $text-alignc;
   align-items: center;
   font-family: 'lato-b';
@@ -92,32 +93,30 @@ h3:hover,
 }
 
 h2 {
-  font-size: $fonts48;
+  font-size: $fonts18;
   color: $colorwhite;
   margin-bottom: 40px;
   text-align: $text-alignc;
-  letter-spacing: 7px;
-  text-transform: uppercase;
+  letter-spacing: $letter-spacing7;
+  @include text-transform (uppercase);
   align-items: center;
   padding-top: 400px;
   font-family: 'Roboto-r';
 
 }
 h3 {
-  font-size: $fonts48;
+  font-size: $fonts18;
   color: $colorwhite;
   text-align: $text-alignc;
   margin-top: 40px;
   margin-bottom: 40px;
-  letter-spacing: 7px;
-  text-transform: uppercase;
+  letter-spacing: $letter-spacing7;
+  @include text-transform (uppercase);
   align-items: center;
   font-family: 'Roboto-r';
 
 }
 }
-
-
 
 .arrow{
   width: 100px;
@@ -128,8 +127,7 @@ h3 {
   margin-left: auto;
   margin-right: auto}
 
-
-  // fisrts section ends
+// fisrts section ends
 #sectionblue 
 {
   width:$width100;
@@ -149,9 +147,7 @@ img {
 .firstblue {
   width: 270px;
   height: 470px;
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  @extend %flexacenter;
 }
 h2 {
   width: 270px;
@@ -167,8 +163,6 @@ p {
   font-size: $fonts14;
   color: $colorgrey;
   font-family: 'Roboto-r';
-
-  
 }
 
 h2:hover,
@@ -193,7 +187,7 @@ p:hover,
 
 
 .sectionnews {
- @extend %marginmaxa;
+  @extend %marginmaxa;
   width:$width95;;
   @extend %flex-container;
 }
@@ -241,7 +235,7 @@ h2:hover
   height: 50px;
   border-radius: $borderr5;
   font-family: 'Roboto-r';
-font-size: $fonts18;
+  font-size: $fonts18;
 }
 .inputsubmit:hover,
 .inputsubmits:hover, {
@@ -294,7 +288,7 @@ font-size: $fonts18;
   left: 45%;
   transform: translate(-50%, -50%);
   text-align: $text-alignc;
-  text-transform: uppercase;
+  @include text-transform (uppercase);
   font-family: 'Roboto-r';
 
 }
@@ -314,8 +308,8 @@ font-size: $fonts18;
     padding-top:90px;
     padding-bottom: 30px;
     text-align: $text-alignc;
-    letter-spacing: 12px;
-    word-spacing: 12px;
+    letter-spacing: $letter-spacing12;
+    word-spacing: $word-spacing12;
     font-family: 'Roboto-r';
 
 
@@ -326,8 +320,8 @@ font-size: $fonts18;
     color: $colorgrey;
     padding-bottom: 120px;
     text-align: $text-alignc;
-    word-spacing: 7px;
-    letter-spacing: 2px;
+    word-spacing: $word-spacing7;;
+    letter-spacing: $letter-spacing2;
     font-family: 'Roboto-r';
 
   }
@@ -342,7 +336,6 @@ p:hover,
   @extend %marginmaxa;
   margin-bottom: 160px;
 
-
 }
 
  .centerhover {
@@ -350,14 +343,10 @@ p:hover,
  }
 .teamimages {
   height: 274px;
-
 }
-
-
 .overlayteam:hover {
   opacity: 0.7;
 }
-
 .overlayteam
 {
   position: absolute;
@@ -379,7 +368,7 @@ p:hover,
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: $text-alignc;
-    text-transform: uppercase;
+    @include text-transform (uppercase);
     width: 180px;
     font-family: 'Roboto-r';
 
@@ -393,7 +382,7 @@ p:hover,
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
+     @include text-transform (uppercase);
     font-family: 'Roboto-r';
 
   }
@@ -508,7 +497,7 @@ p:hover,
   }
   a {
     color: $colorgrey;
-    text-transform: capitalize;
+     @include text-transform (capitalize);
     font-family: 'Roboto-r';
 
   }
@@ -518,7 +507,7 @@ p:hover,
   h2 {
     font-size: $fonts36;
     color: $colorgrey;
-    text-transform: uppercase;
+     @include text-transform (uppercase);
     text-align: $text-alignc;
     padding-top: 40px;
     margin-bottom: 20px;
@@ -528,7 +517,7 @@ p:hover,
   h3 {
     font-size: $fonts24;
     color: $colorgrey;
-    text-transform: uppercase;
+    @include text-transform (uppercase);
     text-align: $text-alignc;
     margin-bottom: 50px;
     font-family: 'Roboto-r';
@@ -538,7 +527,7 @@ p:hover,
   h4 {
     font-size: $fonts18;
     color: $colorgrey;
-    text-transform: capitalize;
+     @include text-transform (capitalize);
     margin-bottom: 25px;
    text-align: $text-alignc;
     font-family: 'Roboto-r';
@@ -580,7 +569,7 @@ p:hover,
  li {
     font-size: $fonts24;
     color: $colorgrey;
-    text-transform: capitalize;
+     @include text-transform (capitalize);
     text-align: $text-alignc;
     margin-bottom: 20px;
     font-family: 'Roboto-r';
@@ -658,7 +647,7 @@ li {
   color: $colorgrey;
   border: none;
   font-family: 'Roboto-r';
-  text-transform: capitalize;
+   @include text-transform (capitalize);
   margin-left: 10%;
 
 }
@@ -687,7 +676,7 @@ li {
   color: $colorgrey;
   border: none;
   font-family: 'Roboto-r';
-  text-transform: capitalize;
+   @include text-transform (capitalize);
   width:$width80;;
   margin-left: 10%;
 
@@ -702,7 +691,7 @@ li {
   margin-left: 10%;
   font-size: $fonts18;
   font-family: 'Roboto-r';
-  text-transform: capitalize;
+   @include text-transform (capitalize);
   font-size: $fonts18;
 }
 .inputsubmits:hover{
@@ -746,9 +735,9 @@ li {
 }
 
 .dropdown {
-  // float: left;
   overflow: hidden;
-  margin-left: 30px;
+  margin-right: 55px;
+
 }
 
 .dropdown .dropbtn {
@@ -756,7 +745,7 @@ li {
   border: none;
   outline: none;
   color: white;
-  margin: 0;
+  margin-left: 35px;
 }
 
 .dropdown-content {
@@ -782,6 +771,6 @@ li {
 // .dropdown:hover .dropdown-content {
 //   display: block;
 // }
-// links 
+ 
 
 @import 'responsive.scss';

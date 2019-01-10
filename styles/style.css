@@ -103,6 +103,15 @@ header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containe
   max-width: 1200px;
   margin: auto; }
 
+.sectionbluecenter .firstblue {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 @font-face {
   font-family: 'Roboto-l';
   src: url(../fonts/Roboto-Light.ttf); }
@@ -179,7 +188,7 @@ nav a:hover {
     color: #000000;
     cursor: pointer; }
   .margincenter h2 {
-    font-size: 48px;
+    font-size: 18px;
     color: #FFFFFF;
     margin-bottom: 40px;
     text-align: center;
@@ -191,7 +200,7 @@ nav a:hover {
     padding-top: 400px;
     font-family: 'Roboto-r'; }
   .margincenter h3 {
-    font-size: 48px;
+    font-size: 18px;
     color: #FFFFFF;
     text-align: center;
     margin-top: 40px;
@@ -223,14 +232,7 @@ nav a:hover {
     margin: 25px; }
   .sectionbluecenter .firstblue {
     width: 270px;
-    height: 470px;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    height: 470px; }
   .sectionbluecenter h2 {
     width: 270px;
     font-size: 18px;
@@ -651,14 +653,14 @@ nav a:hover {
 
 .dropdown {
   overflow: hidden;
-  margin-left: 30px; }
+  margin-right: 55px; }
 
 .dropdown .dropbtn {
   font-size: 18px;
   border: none;
   outline: none;
   color: white;
-  margin: 0; }
+  margin-left: 35px; }
 
 .dropdown-content {
   display: none;
@@ -738,7 +740,8 @@ nav a:hover {
     color: black;
     padding: 10px 10px;
     display: block;
-    text-align: left; }
+    text-align: left;
+    font-size: 18px; }
   .dropdown-content a:hover {
     background-color: #ddd; }
   .dropdown:hover .dropdown-content {
@@ -761,7 +764,7 @@ nav a:hover {
     -ms-flex-pack: center;
     justify-content: center; }
   .dropdown-content {
-    min-width: 200px; }
+    min-width: 100px; }
   .sectionbluecenter .firstblue {
     height: 270px; }
   .bgpark h4 {
