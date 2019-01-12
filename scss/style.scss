@@ -335,7 +335,9 @@ p:hover,
   @extend %flex-aroundwrap ;
   @extend %marginmaxa;
   margin-bottom: 160px;
-
+  a {
+    height:30px;
+  }
 }
 
  .centerhover {
@@ -344,6 +346,7 @@ p:hover,
 .teamimages {
   height: 274px;
 }
+
 .overlayteam:hover {
   opacity: 0.7;
 }

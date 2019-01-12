@@ -369,6 +369,8 @@ nav a:hover {
     cursor: pointer; }
   .containerteam .containerteamcenter {
     margin-bottom: 160px; }
+    .containerteam .containerteamcenter a {
+      height: 30px; }
   .containerteam .centerhover {
     position: relative; }
   .containerteam .teamimages {
@@ -655,7 +657,7 @@ nav a:hover {
   overflow: hidden;
   margin-right: 55px; }
 
-.dropdown .dropbtn {
+.dropdown .dr opbtn {
   font-size: 18px;
   border: none;
   outline: none;
