@@ -341,7 +341,8 @@ p:hover,
 }
 
  .centerhover {
-  @include position (relative);;
+  @include position (relative);
+      height: 274px;
  }
 .teamimages {
   height: 274px;
@@ -352,7 +353,7 @@ p:hover,
 }
 .overlayteam
 {
-  @include position (absolute);;
+  @include position (absolute);
   top: 0;
   bottom: 0;
   left: 0;
@@ -366,8 +367,8 @@ p:hover,
   .hovertexti {
     color: $colorwhite;
     font-size: $fonts18;
-    @include position (absolute);;
-    top: 50%;
+    @include position (absolute);
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: $text-alignc;
@@ -381,8 +382,8 @@ p:hover,
     width: 180px;
     color: $colorwhite;
     font-size: $fonts24;
-    @include position (absolute);;
-    top: 30%;
+    @include position (absolute);
+    top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
      @include text-transform (uppercase);
@@ -394,21 +395,21 @@ p:hover,
   height: 30px;
   display: block;
   @include position (absolute);;
-  top: 70%;
+  top: 67%;
   left: 27%;
 }
 .iconst {
   height: 30px;
   display: block;
   @include position (absolute);;
-  top: 70%;
+  top: 67%;
   left: 43%;
 }
 .iconsp {
   height: 30px;
   display: block;
   @include position (absolute);;
-  top: 70%;
+  top: 67%;
   left: 63%;
 }
 }
@@ -507,6 +508,7 @@ p:hover,
    a:hover{
      color: $colorahover;
    }
+  
   h2 {
     font-size: $fonts36;
     color: $colorgrey;
@@ -536,13 +538,11 @@ p:hover,
     font-family: 'Roboto-r';
 
   }
-
+  
  
   .hoverpack {
     height: 240px; 
     cursor: pointer;
-
-
   }
   .hoverpack:hover h2{
     color: $colorwhite;
@@ -554,11 +554,12 @@ p:hover,
     background: $colorhover;
  
   }
-  .hoverpack:hover h4 {
+  .hoverpack:hover a {
     color: $colorwhite;
     background: $colorhover;
  
   }
+ 
   .hoverpack:hover {
     color: $colorwhite;
     background: $colorhover;
@@ -581,7 +582,7 @@ p:hover,
   li:last-child {
     margin-bottom: 55px;
   }
-  
+
 }
 
 // package lists ends
@@ -743,7 +744,7 @@ li {
 
 }
 
-.dropdown .dr opbtn {
+.dropdown .dropbtn {
   font-size: $fonts18;  
   border: none;
   outline: none;
@@ -774,6 +775,11 @@ li {
 // .dropdown:hover .dropdown-content {
 //   display: block;
 // }
- 
-
+a:active h4 {
+  color: red;
+background-color: yellow;
+} 
+a:visited {
+  color: green;
+}
 @import 'responsive.scss';

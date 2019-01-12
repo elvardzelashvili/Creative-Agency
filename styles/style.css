@@ -372,7 +372,8 @@ nav a:hover {
     .containerteam .containerteamcenter a {
       height: 30px; }
   .containerteam .centerhover {
-    position: relative; }
+    position: relative;
+    height: 274px; }
   .containerteam .teamimages {
     height: 274px; }
   .containerteam .overlayteam:hover {
@@ -394,7 +395,7 @@ nav a:hover {
     color: #FFFFFF;
     font-size: 18px;
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -408,7 +409,7 @@ nav a:hover {
     color: #FFFFFF;
     font-size: 24px;
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -419,19 +420,19 @@ nav a:hover {
     height: 30px;
     display: block;
     position: absolute;
-    top: 70%;
+    top: 67%;
     left: 27%; }
   .containerteam .iconst {
     height: 30px;
     display: block;
     position: absolute;
-    top: 70%;
+    top: 67%;
     left: 43%; }
   .containerteam .iconsp {
     height: 30px;
     display: block;
     position: absolute;
-    top: 70%;
+    top: 67%;
     left: 63%; }
 
 #bgpark {
@@ -524,7 +525,7 @@ nav a:hover {
   #packagelists .hoverpack:hover h3 {
     color: #FFFFFF;
     background: #3EC6FF; }
-  #packagelists .hoverpack:hover h4 {
+  #packagelists .hoverpack:hover a {
     color: #FFFFFF;
     background: #3EC6FF; }
   #packagelists .hoverpack:hover {
@@ -657,7 +658,7 @@ nav a:hover {
   overflow: hidden;
   margin-right: 55px; }
 
-.dropdown .dr opbtn {
+.dropdown .dropbtn {
   font-size: 18px;
   border: none;
   outline: none;
@@ -670,6 +671,13 @@ nav a:hover {
   background-color: #f9f9f9;
   min-width: 100px;
   z-index: 1; }
+
+a:active h4 {
+  color: red;
+  background-color: yellow; }
+
+a:visited {
+  color: green; }
 
 @media only screen and (max-width: 992px) {
   .containerimages {
@@ -720,7 +728,7 @@ nav a:hover {
 .containerteam p {
   font-size: 18px; }
 
-.containerteam .containerteam .centerhover {
+.containerteam .containerteamcenter .centerhover {
   margin-top: 20px; }
 
 @media only screen and (max-width: 768px) {
