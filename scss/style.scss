@@ -71,8 +71,7 @@ opacity: 0.4;
 
 .margincenter {
   @extend %marginmaxa;
-  width:$width95;;
-  
+  width:$width95;
   
 
 h1 {
@@ -134,8 +133,8 @@ h3 {
 }
 .sectionbluecenter {
  @extend %marginmaxa;
-  width:$width95;;
-  @extend %flex-container;
+width:$width95;;
+@extend %flex-container;
   
   
 img {
@@ -163,6 +162,7 @@ p {
   font-size: $fonts14;
   color: $colorgrey;
   font-family: 'Roboto-r';
+  text-align: center;
 }
 
 h2:hover,
@@ -247,24 +247,30 @@ h2:hover
 // images container starts
 .containerimages {
   width:$width100;
-  @extend %flex-containernc;
+  @extend %flex-around;
   margin-bottom: 50px;
-  
+  flex-wrap: wrap;
 }
-.images {
-  width:100%;
-  height: 300px;
-  display: block;
+// .images {
+//   width:100%;
+//   height: 300px;
+//   display: block;
 
-}
+// }
 
 .container {
   @include position (relative);
+  background-image: url("../img/wood.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
   width: 480px;
+  display: block;
 }
 
 .overlay {
-  @include position (absolute);;
+  @include position (absolute);
   top: 0;
   bottom: 0;
   left: 0;
@@ -493,7 +499,7 @@ p:hover,
  width:$width100;
 .packagelistscenter {
  @extend %marginmaxa;
-  @extend %flex-container;
+ @extend %flex-container;
   }
   .package {
  width: 370px;
@@ -597,7 +603,7 @@ p:hover,
 .centerdiv {
  width:$width70;;
  height: 645px;
- background: $colorgrey;
+ background: rgba(134, 134, 134, 0.5);
  @include position (absolute);
  top: 40px;
  left: 15%;
@@ -645,13 +651,13 @@ li {
   height: 50px;
   border-radius: $borderr5;
   font-size: $fonts18;
-  background:$colorwhite;
+  background: rgba(134, 134, 134, 0.5);
   padding-left: 20px;
   margin-top: 20px;
   color: $colorgrey;
-  border: none;
+  border: 1px solid #FFFFFF;
   font-family: 'Roboto-r';
-   @include text-transform (capitalize);
+  @include text-transform (capitalize);
   margin-left: 10%;
 
 }
