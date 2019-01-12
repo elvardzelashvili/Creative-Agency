@@ -114,23 +114,38 @@ header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containe
 
 @font-face {
   font-family: 'Roboto-l';
-  src: url(../fonts/Roboto-Light.ttf); }
+  src: url(../fonts/Roboto-Light.ttf);
+  src: url(../fonts/Roboto-Light.eot);
+  src: url(../fonts/Roboto-Light.woff);
+  src: url(../fonts/Roboto-Light.woff2); }
 
 @font-face {
   font-family: 'Roboto-b';
-  src: url(../fonts/Roboto-Black.ttf); }
+  src: url(../fonts/Roboto-Black.ttf);
+  src: url(../fonts/Roboto-Black.eot);
+  src: url(../fonts/Roboto-Black.woff);
+  src: url(../fonts/Roboto-Black.woff2); }
 
 @font-face {
   font-family: 'Roboto-r';
-  src: url(../fonts/Roboto-Regular.ttf); }
+  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.eot);
+  src: url(../fonts/Roboto-Regular.woff);
+  src: url(../fonts/Roboto-Regular.woff2); }
 
 @font-face {
   font-family: 'lato-b';
-  src: url(../fonts/Lato-Bold.ttf); }
+  src: url(../fonts/Lato-Bold.ttf);
+  src: url(../fonts/Lato-Bold.eot);
+  src: url(../fonts/Lato-Bold.woff);
+  src: url(../fonts/Lato-Bold.woff2); }
 
 @font-face {
   font-family: 'lato-r';
-  src: url(../fonts/Lato-Regular.ttf); }
+  src: url(../fonts/Lato-Regular.ttf);
+  src: url(../fonts/Lato-Regular.eot);
+  src: url(../fonts/Lato-Regular.woff);
+  src: url(../fonts/Lato-Regular.woff2); }
 
 header {
   -webkit-box-align: center;
@@ -258,7 +273,7 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   opacity: 0.7;
-  margin-bottom: 110px; }
+  margin-bottom: 60px; }
   .containerway .sectionnews {
     width: 95%; }
   .containerway h2 {
@@ -368,7 +383,7 @@ nav a:hover {
     color: #000000;
     cursor: pointer; }
   .containerteam .containerteamcenter {
-    margin-bottom: 160px; }
+    margin-bottom: 60px; }
     .containerteam .containerteamcenter a {
       height: 30px; }
   .containerteam .centerhover {
@@ -676,19 +691,25 @@ a:active h4 {
   color: red;
   background-color: yellow; }
 
-a:visited {
-  color: green; }
-
-@media only screen and (max-width: 992px) {
-  .containerimages {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+@media only screen and (max-width: 1024px) {
+  #packagelists .packagelistscenter {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  #packagelists .containerteamcenter {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+    #packagelists .containerteamcenter .centerhover {
+      margin-top: 20px;
+      margin-left: 61px; } }
+
+@media only screen and (max-width: 1024px) and (max-width: 992px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -712,7 +733,7 @@ a:visited {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .packagelists .packagelistscenter {
+  #packagelists .packagelistscenter {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
@@ -725,13 +746,13 @@ a:visited {
   .inputsubmits {
     width: 100%; } }
 
-.containerteam p {
-  font-size: 18px; }
+@media only screen and (max-width: 1024px) {
+  .containerteam p {
+    font-size: 18px; }
+  .containerteam .containerteamcenter .centerhover {
+    margin-top: 20px; } }
 
-.containerteam .containerteamcenter .centerhover {
-  margin-top: 20px; }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) and (max-width: 768px) {
   header {
     max-width: 600px; }
     header ul {
@@ -766,7 +787,7 @@ a:visited {
   .bgpark p {
     font-size: 18px; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) and (max-width: 480px) {
   .containerimages {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -785,4 +806,11 @@ a:visited {
   .bgpark .fbi {
     width: 20px;
     height: 38px;
-    margin: 16px 25px; } }
+    margin: 16px 25px; }
+  .iframes {
+    display: none; }
+  .centerdiv {
+    width: 100%;
+    left: 0;
+    padding-top: 30px;
+    position: relative; } }

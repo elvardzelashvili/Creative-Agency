@@ -183,7 +183,7 @@ p:hover,
   background-size: cover;
   background-position: center;
   opacity: 0.7;
-  margin-bottom: 110px;
+  margin-bottom: 60px;
 
 
 .sectionnews {
@@ -259,7 +259,7 @@ h2:hover
 }
 
 .container {
-  @include position (relative);;
+  @include position (relative);
   width: 480px;
 }
 
@@ -334,7 +334,7 @@ p:hover,
  .containerteamcenter {
   @extend %flex-aroundwrap ;
   @extend %marginmaxa;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
   a {
     height:30px;
   }
@@ -591,14 +591,14 @@ p:hover,
 // last section starts 
 #lastsection {
   width:$width100;
-  @include position (relative);;
+  @include position (relative);
   
 }
 .centerdiv {
  width:$width70;;
  height: 645px;
  background: $colorgrey;
- @include position (absolute);;
+ @include position (absolute);
  top: 40px;
  left: 15%;
  padding-top: 50px;
@@ -779,7 +779,5 @@ a:active h4 {
   color: red;
 background-color: yellow;
 } 
-a:visited {
-  color: green;
-}
+
 @import 'responsive.scss';
