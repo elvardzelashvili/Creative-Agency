@@ -151,7 +151,9 @@ header {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 35px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  width: 97%;
+  position: relative; }
   header li {
     margin-left: 40px; }
   header a {
@@ -172,34 +174,55 @@ nav a:hover {
   background-color: transparent;
   color: #1e1d19; }
 
+aside {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 .searchimg {
   height: 24px;
   width: 24px;
   margin-left: 40px; }
 
 .dropdown {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  overflow: hidden; }
 
 .dropdown .dropbtn {
   border: 1px solid #FFFFFF;
   outline: none;
   color: #FFFFFF; }
 
+.dropdown-content-search {
+  background-color: #f9f9f9;
+  z-index: 1;
+  display: none;
+  right: 1%;
+  top: 95%;
+  position: absolute; }
+
+.dropdown:hover .dropdown-content-search {
+  display: block;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s; }
+
+.dropdown:hover .searchtext {
+  display: block; }
+
 .searchtext {
   font-size: 18px;
   color: #868686;
   background: #FFFFFF;
-  width: 130px;
   height: 30px;
   margin-right: 10px;
   display: none; }
@@ -802,16 +825,6 @@ a:active h4 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .dropdown-content-search {
-    background-color: #f9f9f9;
-    z-index: 1;
-    display: none; }
-  .dropdown:hover .dropdown-content-search {
-    display: block; }
-  .dropdown:hover .searchtext {
-    display: block; }
-  .searchimg {
-    margin: 0; }
   .menu {
     display: block; }
   .dropdown-content a {
@@ -824,6 +837,10 @@ a:active h4 {
     display: block; }
   .dropdownmenu:hover .dropdown-content a {
     display: block; }
+  .dropdown-content {
+    width: 100%;
+    left: 0%;
+    top: 90%; }
   .sectionbluecenter {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
@@ -841,8 +858,6 @@ a:active h4 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .dropdown-content {
-    min-width: 100px; }
   .sectionbluecenter .firstblue {
     height: 270px; }
   .bgpark h4 {

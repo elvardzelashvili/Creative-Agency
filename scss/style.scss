@@ -6,13 +6,14 @@
 
 
 
-
 header {
   @extend %marginmaxa;
   @extend %flex-container;
   align-items: center;
   margin-top: 35px;
   margin-bottom: 35px;
+  width: 97%;
+  position: relative;
 
 .hdiv{
     @extend %flex-container;
@@ -51,19 +52,22 @@ a {
   }
   
 }
+aside {
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
 .searchimg {
   height: 24px;
   width: 24px;
   margin-left: 40px;
 }
 
-
 .dropdown {
   overflow: hidden;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+ 
 }
 
 .dropdown .dropbtn {
@@ -71,13 +75,27 @@ a {
   outline: none;
   color: $colorwhite;
 }
+.dropdown-content-search {
+  background-color: #f9f9f9;
+  z-index: 1;
+  display: none;
+  right: 1%;
+  top: 95%;
+  position: absolute;
+}
+.dropdown:hover .dropdown-content-search {
+  display: block;
+  transition: 3s;
+}
 
+.dropdown:hover .searchtext {
+  display: block;
+}
 
 .searchtext {
   font-size: 18px;
   color: $colorgrey;
   background: $colorwhite;
-  width: 130px;
   height:30px;
   margin-right: 10px;
   display: none;
