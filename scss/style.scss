@@ -13,7 +13,7 @@ header {
   margin-top: 35px;
   margin-bottom: 35px;
   width: 97%;
-  position: relative;
+  @include position (relative);
 
 .hdiv{
     @extend %flex-container;
@@ -81,7 +81,7 @@ aside {
   display: none;
   right: 1%;
   top: 95%;
-  position: absolute;
+  @include position (absolute);
 }
 .dropdown:hover .dropdown-content-search {
   display: block;

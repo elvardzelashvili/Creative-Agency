@@ -85,9 +85,6 @@ justify-content: center;
 {
     header {
     max-width: 600px;
-    a {
-      font-size: 24px;
-    }
     ul {
         display: none
     }
@@ -144,30 +141,36 @@ p{
 
   @media only screen and (max-width: 480px) 
   {
-    
+    header  {
+      a {
+      margin-bottom: 10px;
+  }}
+  .dropdown-content-search {
+      top: 98%;
+}
+  .dropdown-content {
+  top: 98%;
+}
     .containerimages {
          
       flex-wrap: wrap;
       justify-content: center;
-         
    }  
  
   .sectionbluecenter 
   { 
-    .firstblue {
+  .firstblue {
         height: 270px;
       }
   }
 
-  .bgpark
-  {
-
+  .bgpark  {
   h4 {
     margin-bottom: 70px;
   }
   .fb {
- width: 70px;
- height: 70px;
+    width: 70px;
+    height: 70px;
   }
   .fbi {
     width: 20px;
@@ -177,23 +180,14 @@ p{
 } 
 
 .iframes {
-display: none;
+    display: none;
 
 }
 .centerdiv {
- width: 100%;
- left: 0;
- padding-top: 30px;
- @include position (relative);
+    width: 100%;
+    left: 0;
+    padding-top: 30px;
+    @include position (relative);
 }
 
 }
-@media only screen and (max-width: 320px) 
-  {
-    header {
-      a {
-        font-size: 36px;
-      }
-      
-   }  
-  }
