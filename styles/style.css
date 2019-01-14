@@ -387,10 +387,12 @@ aside {
     height: 50px;
     border-radius: 5px;
     font-family: 'Roboto-r';
-    font-size: 18px; }
+    font-size: 18px;
+    border: 1px solid #FFFFFF; }
   .containerway .inputsubmit:hover,
   .containerway .inputsubmits:hover {
-    background: #00bfff; }
+    background: #00bfff;
+    border: 1px solid #00bfff; }
 
 .containerimages {
   width: 100%;
@@ -682,7 +684,7 @@ aside {
     height: 50px;
     border-radius: 5px;
     font-size: 18px;
-    background: rgba(134, 134, 134, 0.5);
+    background: rgba(134, 134, 134, 0.3);
     padding-left: 20px;
     margin-top: 20px;
     color: #868686;
@@ -691,25 +693,25 @@ aside {
     text-transform: capitalize;
     margin-left: 10%; }
   .centerdiv .inputsection:hover {
-    border: 1px solid #FFFFFF;
     cursor: pointer;
-    background: #A8A8A8;
-    color: #FFFFFF; }
+    background: rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    border: 1px solid #00bfff; }
   .centerdiv .message:hover {
-    border: 1px solid #FFFFFF;
     cursor: pointer;
-    background: #A9A9A9;
-    color: #FFFFFF; }
+    background: rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    border: 1px solid #00bfff; }
   .centerdiv .message {
     height: 114px;
     border-radius: 5px;
     font-size: 18px;
-    background: #FFFFFF;
+    background: rgba(134, 134, 134, 0.3);
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: #868686;
-    border: none;
+    border: 1px solid #FFFFFF;
     font-family: 'Roboto-r';
     text-transform: capitalize;
     width: 80%;
@@ -717,7 +719,7 @@ aside {
   .centerdiv .inputsubmits {
     background-color: #3EC6FF;
     color: #FFFFFF;
-    border: none;
+    border: 1px solid #FFFFFF;
     height: 50px;
     border-radius: 5px;
     width: 80%;
@@ -727,8 +729,9 @@ aside {
     text-transform: capitalize;
     font-size: 18px; }
   .centerdiv .inputsubmits:hover {
-    border: 1px solid #FFFFFF;
-    cursor: pointer; }
+    border: 1px solid #00bfff;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3); }
 
 .copyright {
   width: 100%; }
@@ -751,9 +754,9 @@ a:active h4 {
 
 @media only screen and (max-width: 1200px) {
   .containerteamcenter {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    width: 67%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -761,7 +764,8 @@ a:active h4 {
     align-content: center; }
   .sectionbluecenter {
     -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 87%; }
     .sectionbluecenter .firstblue {
       margin-right: 40px;
       margin-left: 41px;
@@ -769,10 +773,9 @@ a:active h4 {
     .sectionbluecenter h2 {
       font-size: 24px; }
     .sectionbluecenter p {
-      font-size: 16px; } }
-
-@media only screen and (max-width: 1024px) {
+      font-size: 16px; }
   #packagelists .packagelistscenter {
+    width: 90%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; } }
@@ -797,18 +800,17 @@ a:active h4 {
     width: 50%;
     margin-left: 25%;
     margin-top: 30px; }
-  .containerway .containerteamcenter {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  #packagelists .packagelistscenter {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  .containerteamcenter {
+    width: 80%; }
+  #packagelists .packagelistscenter .package {
+    width: 300px; }
   .message {
     width: 100%; }
   .inputsubmits {
     width: 100%; } }
+
+.sectionbluecenter {
+  width: 95%; }
 
 .containerteam p {
   font-size: 18px; }
@@ -846,17 +848,14 @@ a:active h4 {
     width: 100%;
     left: 0%;
     top: 90%; }
-  .sectionbluecenter {
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    .sectionbluecenter .firstblue {
-      height: 300px;
-      margin-left: auto;
-      margin-right: auto; }
-      .sectionbluecenter .firstblue h2 {
-        font-size: 18px; }
-      .sectionbluecenter .firstblue p {
-        font-size: 14px; }
+  .sectionbluecenter .firstblue {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; }
+    .sectionbluecenter .firstblue h2 {
+      font-size: 18px; }
+    .sectionbluecenter .firstblue p {
+      font-size: 14px; }
   .bgpark p {
     font-size: 14px; } }
 

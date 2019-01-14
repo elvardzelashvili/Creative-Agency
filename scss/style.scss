@@ -313,10 +313,12 @@ h2:hover
   border-radius: $borderr5;
   font-family: 'Roboto-r';
   font-size: $fonts18;
+  border: 1px solid $colorwhite;
 }
 .inputsubmit:hover,
 .inputsubmits:hover, {
   background:$colorhoverinput;
+  border: 1px solid $colorhoverinput;
 }
 }
 // container way ends
@@ -727,11 +729,11 @@ li {
   height: 50px;
   border-radius: $borderr5;
   font-size: $fonts18;
-  background: rgba(134, 134, 134, 0.5);
+  background: rgba(134, 134, 134, 0.3);
   padding-left: 20px;
   margin-top: 20px;
   color: $colorgrey;
-  border: 1px solid #FFFFFF;
+  border: 1px solid $colorwhite;
   font-family: 'Roboto-r';
   @include text-transform (capitalize);
   margin-left: 10%;
@@ -739,30 +741,30 @@ li {
 }
 
 .inputsection:hover {
- border: 1px solid $colorwhite;
- cursor: pointer;
- background: #A8A8A8;
- color: $colorwhite;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  color: $colorwhite;
+  border: 1px solid $colorhoverinput;
 }
 .message:hover {
-  border: 1px solid $colorwhite;
   cursor: pointer;
-  background: #A9A9A9;
+  background: rgba(255, 255, 255, 0.3);
   color: $colorwhite;
+  border: 1px solid $colorhoverinput;
  }
  
 .message {
   height: 114px;
   border-radius: $borderr5;
   font-size: $fonts18;
-  background:$colorwhite;
+  background: rgba(134, 134, 134, 0.3);
   padding-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   color: $colorgrey;
-  border: none;
+  border: 1px solid $colorwhite;
   font-family: 'Roboto-r';
-   @include text-transform (capitalize);
+  @include text-transform (capitalize);
   width:$width80;;
   margin-left: 10%;
 
@@ -770,19 +772,20 @@ li {
 .inputsubmits {
   background-color: $colorhover;
   color: $colorwhite;
-  border: none;
+  border: 1px solid $colorwhite;
   height: 50px;
   border-radius: $borderr5;
   width:$width80;;
   margin-left: 10%;
   font-size: $fonts18;
   font-family: 'Roboto-r';
-   @include text-transform (capitalize);
+  @include text-transform (capitalize);
   font-size: $fonts18;
 }
 .inputsubmits:hover{
-  border: 1px solid $colorwhite;
+  border: 1px solid $colorhoverinput;
   cursor: pointer;
+  background:rgba(255, 255, 255, 0.3);
 
  }
 }
