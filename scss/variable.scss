@@ -1,4 +1,3 @@
-
 // colors
 $colorgrey: #868686;
 $colorwhite: #FFFFFF;
@@ -8,6 +7,15 @@ $colorhhover:  #000000;
 $colorhoverpark: #ccf2ff;
 $colorhoverinput:#00bfff;
 $colortransp: transparent;
+
+
+// color rgba 
+$colorrgbahover: rgba( 62, 198, 255, 0.7);
+$colorrgbabg: rgba( 255, 255, 255, 0.4);
+$colorrgbabginput: rgba(134, 134, 134, 0.4);
+$colorrgbainputsection: rgba(134, 134, 134, 0.6);
+
+
 // fonts
 $fonts14: 14px;
 $fonts16: 16px;
@@ -37,3 +45,8 @@ $letter-spacing12: 12px;
 //   word-spacing
 $word-spacing7: 7px;
 $word-spacing12: 12px;
+
+// transition
+
+$transition3: 3s;
+$transition4: 4s;

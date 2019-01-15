@@ -225,7 +225,9 @@ aside {
   background: #FFFFFF;
   height: 30px;
   margin-right: 10px;
-  display: none; }
+  display: none;
+  border-radius: 7px;
+  border: 1px solid #3EC6FF; }
 
 .dropdownmenu {
   overflow: hidden; }
@@ -364,10 +366,22 @@ aside {
     color: #000000;
     cursor: pointer; }
   .containerway .divinput {
-    width: 1200px;
-    width: 100%; }
+    max-width: 1200px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .containerway .inputway {
+    width: 770px; }
+  .containerway .inputway2 {
+    width: 370px; }
   .containerway .input {
-    width: 770px;
+    width: 100%;
     height: 50px;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
@@ -377,22 +391,22 @@ aside {
     padding-left: 20px;
     font-family: 'Roboto-r'; }
   .containerway .input:hover {
-    color: #ccf2ff;
     border: 1px solid #00bfff; }
   .containerway .inputsubmit {
     background-color: #3EC6FF;
     color: #FFFFFF;
     border: none;
-    width: 370px;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     font-family: 'Roboto-r';
     font-size: 18px;
     border: 1px solid #FFFFFF; }
-  .containerway .inputsubmit:hover,
-  .containerway .inputsubmits:hover {
-    background: #00bfff;
-    border: 1px solid #00bfff; }
+  .containerway .inputsubmit:hover {
+    border: 1px solid #00bfff;
+    background: rgba(255, 255, 255, 0.4);
+    color: black;
+    cursor: pointer; }
 
 .containerimages {
   width: 100%;
@@ -408,7 +422,8 @@ aside {
   background-position: center;
   height: 300px;
   width: 480px;
-  display: block; }
+  display: block;
+  margin-top: 20px; }
 
 .overlay {
   position: absolute;
@@ -422,7 +437,7 @@ aside {
   -webkit-transition: .4s ease;
   -o-transition: .4s ease;
   transition: .4s ease;
-  background-color: #3EC6FF; }
+  background-color: rgba(62, 198, 255, 0.7); }
 
 .container:hover .overlay {
   opacity: 0.7; }
@@ -487,7 +502,7 @@ aside {
     -webkit-transition: .4s ease;
     -o-transition: .4s ease;
     transition: .4s ease;
-    background-color: #3EC6FF; }
+    background-color: rgba(62, 198, 255, 0.7); }
   .containerteam .hovertexti {
     color: #FFFFFF;
     font-size: 18px;
@@ -608,9 +623,15 @@ aside {
     font-family: 'Roboto-r'; }
   #packagelists h4 {
     font-size: 18px;
-    color: #868686;
     text-transform: capitalize;
-    margin-bottom: 25px;
+    text-align: center; }
+  #packagelists h4 a {
+    background: #3EC6FF;
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     font-family: 'Roboto-r'; }
   #packagelists .hoverpack {
@@ -623,8 +644,8 @@ aside {
     color: #FFFFFF;
     background: #3EC6FF; }
   #packagelists .hoverpack:hover a {
-    color: #FFFFFF;
-    background: #3EC6FF; }
+    color: #868686;
+    background: #FFFFFF; }
   #packagelists .hoverpack:hover {
     color: #FFFFFF;
     background: #3EC6FF; }
@@ -648,7 +669,7 @@ aside {
 .centerdiv {
   width: 70%;
   height: 645px;
-  background: rgba(134, 134, 134, 0.5);
+  background: rgba(134, 134, 134, 0.4);
   position: absolute;
   top: 40px;
   left: 15%;
@@ -684,33 +705,31 @@ aside {
     height: 50px;
     border-radius: 5px;
     font-size: 18px;
-    background: rgba(134, 134, 134, 0.3);
+    background: rgba(134, 134, 134, 0.6);
     padding-left: 20px;
     margin-top: 20px;
-    color: #868686;
+    color: #FFFFFF;
     border: 1px solid #FFFFFF;
     font-family: 'Roboto-r';
     text-transform: capitalize;
     margin-left: 10%; }
   .centerdiv .inputsection:hover {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.3);
-    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.4);
     border: 1px solid #00bfff; }
   .centerdiv .message:hover {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.3);
-    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.4);
     border: 1px solid #00bfff; }
   .centerdiv .message {
     height: 114px;
     border-radius: 5px;
     font-size: 18px;
-    background: rgba(134, 134, 134, 0.3);
+    background: rgba(134, 134, 134, 0.6);
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #868686;
+    color: #FFFFFF;
     border: 1px solid #FFFFFF;
     font-family: 'Roboto-r';
     text-transform: capitalize;
@@ -731,7 +750,8 @@ aside {
   .centerdiv .inputsubmits:hover {
     border: 1px solid #00bfff;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.3); }
+    background: rgba(255, 255, 255, 0.4);
+    color: black; }
 
 .copyright {
   width: 100%; }

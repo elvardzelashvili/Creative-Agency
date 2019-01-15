@@ -99,6 +99,8 @@ aside {
   height:30px;
   margin-right: 10px;
   display: none;
+  border-radius: 7px;
+  border: 1px solid $colorhover;
 }
 
 
@@ -285,12 +287,22 @@ h2:hover
   cursor: pointer;
 }
 .divinput {
-   width: 1200px;
+   max-width: 1200px;
    width:$width100;
-  
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.inputway 
+{
+  width: 770px;
+}
+.inputway2 
+{
+  width: 370px;
 }
 .input {
-  width: 770px;
+  width: 100%;
   height: 50px;
   border: 1px solid $colorwhite;
   border-radius: $borderr5;
@@ -301,25 +313,27 @@ h2:hover
   font-family: 'Roboto-r';
 }
 .input:hover {
-  color: $colorhoverpark;
   border: 1px solid $colorhoverinput;
 }
 .inputsubmit {
-  background-color: #3EC6FF;
+  background-color: $colorhover;
   color: $colorwhite;
   border: none;
-  width: 370px;
+  width: 100%;
   height: 50px;
   border-radius: $borderr5;
   font-family: 'Roboto-r';
   font-size: $fonts18;
   border: 1px solid $colorwhite;
+  
 }
-.inputsubmit:hover,
-.inputsubmits:hover, {
-  background:$colorhoverinput;
+.inputsubmit:hover {
   border: 1px solid $colorhoverinput;
+  background: $colorrgbabg;
+  color: black;
+  cursor: pointer;
 }
+
 }
 // container way ends
 
@@ -330,12 +344,7 @@ h2:hover
   margin-bottom: 50px;
   flex-wrap: wrap;
 }
-// .images {
-//   width:100%;
-//   height: 300px;
-//   display: block;
 
-// }
 
 .container {
   @include position (relative);
@@ -346,6 +355,7 @@ h2:hover
   height: 300px;
   width: 480px;
   display: block;
+  margin-top: 20px;
 }
 
 .overlay {
@@ -358,7 +368,7 @@ h2:hover
   width:$width100;
   opacity: 0;
   transition: .4s ease;
-  background-color: #3EC6FF;
+  background-color: $colorrgbahover;
 }
 
 .container:hover .overlay {
@@ -446,7 +456,7 @@ p:hover,
   width:$width100;
   opacity: 0;
   transition: .4s ease;
-  background-color: #3EC6FF;
+  background-color: $colorrgbahover;
 }
   .hovertexti {
     color: $colorwhite;
@@ -615,14 +625,20 @@ p:hover,
   
   h4 {
     font-size: $fonts18;
-    color: $colorgrey;
-     @include text-transform (capitalize);
-    margin-bottom: 25px;
-   text-align: $text-alignc;
-    font-family: 'Roboto-r';
+    @include text-transform (capitalize);
+    text-align: $text-alignc;
 
   }
-  
+  h4 a {
+    background: $colorhover;
+    color: $colorwhite;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: $text-alignc;
+    font-family: 'Roboto-r';
+  }
  
   .hoverpack {
     height: 240px; 
@@ -631,7 +647,7 @@ p:hover,
   .hoverpack:hover h2{
     color: $colorwhite;
     background: $colorhover;
- 
+    
   }
   .hoverpack:hover h3 {
     color: $colorwhite;
@@ -639,8 +655,8 @@ p:hover,
  
   }
   .hoverpack:hover a {
-    color: $colorwhite;
-    background: $colorhover;
+    color: $colorgrey;
+    background: $colorwhite;
  
   }
  
@@ -681,7 +697,7 @@ p:hover,
 .centerdiv {
  width:$width70;;
  height: 645px;
- background: rgba(134, 134, 134, 0.5);
+ background: $colorrgbabginput;
  @include position (absolute);
  top: 40px;
  left: 15%;
@@ -729,10 +745,10 @@ li {
   height: 50px;
   border-radius: $borderr5;
   font-size: $fonts18;
-  background: rgba(134, 134, 134, 0.3);
+  background: $colorrgbainputsection;
   padding-left: 20px;
   margin-top: 20px;
-  color: $colorgrey;
+  color: $colorwhite;
   border: 1px solid $colorwhite;
   font-family: 'Roboto-r';
   @include text-transform (capitalize);
@@ -742,14 +758,12 @@ li {
 
 .inputsection:hover {
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.3);
-  color: $colorwhite;
+  background: $colorrgbabg;
   border: 1px solid $colorhoverinput;
 }
 .message:hover {
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.3);
-  color: $colorwhite;
+  background: $colorrgbabg;
   border: 1px solid $colorhoverinput;
  }
  
@@ -757,11 +771,11 @@ li {
   height: 114px;
   border-radius: $borderr5;
   font-size: $fonts18;
-  background: rgba(134, 134, 134, 0.3);
+  background: $colorrgbainputsection;
   padding-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: $colorgrey;
+  color: $colorwhite;
   border: 1px solid $colorwhite;
   font-family: 'Roboto-r';
   @include text-transform (capitalize);
@@ -785,8 +799,8 @@ li {
 .inputsubmits:hover{
   border: 1px solid $colorhoverinput;
   cursor: pointer;
-  background:rgba(255, 255, 255, 0.3);
-
+  background: $colorrgbabg;
+  color: black;
  }
 }
 
