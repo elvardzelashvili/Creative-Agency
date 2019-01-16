@@ -49,23 +49,7 @@
     justify-content: space-around;
     
 }
-.containerway 
-{
-  h2 {
-    font-size: 18px;
-    text-align: center;
-    padding-top: 50px;
-  }
-  .input {
-    width: 90%;
-    margin-left: 5%;
-   
-  }
- .inputsubmit {
-   width: 50%;
-   margin-left: 25%;
-   margin-top:30px;
- }}
+
  .containerteamcenter {
   width: 80%;
 }
@@ -194,7 +178,24 @@ header  {
         height: 270px;
       }
   }
-
+.containerway 
+{
+  h2 {
+   font-size: $fonts18;
+}
+    .divinput {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
+    .input {
+      float: none;
+    }
+    .inputsubmit {
+      float: none;
+    }
+}
   .bgpark  {
   h4 {
     margin-bottom: 70px;

@@ -268,7 +268,6 @@ p:hover,
 .sectionnews {
   @extend %marginmaxa;
   width:$width95;;
-  @extend %flex-container;
 }
 h2 
 {
@@ -289,20 +288,12 @@ h2:hover
 .divinput {
    max-width: 1200px;
    width:$width100;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+   margin: auto;
+   background: aqua;
 }
-.inputway 
-{
-  width: 770px;
-}
-.inputway2 
-{
-  width: 370px;
-}
+
 .input {
-  width: 100%;
+  width: 65%;
   height: 50px;
   border: 1px solid $colorwhite;
   border-radius: $borderr5;
@@ -311,6 +302,7 @@ h2:hover
   background:$colortransp;
   padding-left: 20px;
   font-family: 'Roboto-r';
+  float: left;
 }
 .input:hover {
   border: 1px solid $colorhoverinput;
@@ -319,12 +311,13 @@ h2:hover
   background-color: $colorhover;
   color: $colorwhite;
   border: none;
-  width: 100%;
   height: 50px;
   border-radius: $borderr5;
   font-family: 'Roboto-r';
   font-size: $fonts18;
   border: 1px solid $colorwhite;
+  width: 30%;
+  float: right;
   
 }
 .inputsubmit:hover {

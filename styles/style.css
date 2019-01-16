@@ -54,7 +54,7 @@ button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-header, header .hdiv, header ul, .sectionbluecenter, .containerway .sectionnews, #packagelists .packagelistscenter {
+header, header .hdiv, header ul, .sectionbluecenter, #packagelists .packagelistscenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,20 +368,10 @@ aside {
   .containerway .divinput {
     max-width: 1200px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .containerway .inputway {
-    width: 770px; }
-  .containerway .inputway2 {
-    width: 370px; }
+    margin: auto;
+    background: aqua; }
   .containerway .input {
-    width: 100%;
+    width: 65%;
     height: 50px;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
@@ -389,19 +379,21 @@ aside {
     font-size: 18px;
     background: transparent;
     padding-left: 20px;
-    font-family: 'Roboto-r'; }
+    font-family: 'Roboto-r';
+    float: left; }
   .containerway .input:hover {
     border: 1px solid #00bfff; }
   .containerway .inputsubmit {
     background-color: #3EC6FF;
     color: #FFFFFF;
     border: none;
-    width: 100%;
     height: 50px;
     border-radius: 5px;
     font-family: 'Roboto-r';
     font-size: 18px;
-    border: 1px solid #FFFFFF; }
+    border: 1px solid #FFFFFF;
+    width: 30%;
+    float: right; }
   .containerway .inputsubmit:hover {
     border: 1px solid #00bfff;
     background: rgba(255, 255, 255, 0.4);
@@ -809,17 +801,6 @@ a:active h4 {
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
-  .containerway h2 {
-    font-size: 18px;
-    text-align: center;
-    padding-top: 50px; }
-  .containerway .input {
-    width: 90%;
-    margin-left: 5%; }
-  .containerway .inputsubmit {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 30px; }
   .containerteamcenter {
     width: 80%; }
   #packagelists .packagelistscenter .package {
@@ -894,6 +875,21 @@ a:active h4 {
     justify-content: center; }
   .sectionbluecenter .firstblue {
     height: 270px; }
+  .containerway h2 {
+    font-size: 18px; }
+  .containerway .divinput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .containerway .input {
+    float: none; }
+  .containerway .inputsubmit {
+    float: none; }
   .bgpark h4 {
     margin-bottom: 70px; }
   .bgpark .fb {
