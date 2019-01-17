@@ -339,7 +339,7 @@ h2:hover
 }
 
 
-.container {
+.containerwood {
   @include position (relative);
   background-image: url("../img/wood.jpg");
   background-repeat: no-repeat;
@@ -350,7 +350,39 @@ h2:hover
   display: block;
   margin-top: 20px;
 }
-
+.containerbear {
+  @include position (relative);
+  background-image: url("../img/bear.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 480px;
+  display: block;
+  margin-top: 20px;
+}
+.containerstreet {
+  @include position (relative);
+  background-image: url("../img/street.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 480px;
+  display: block;
+  margin-top: 20px;
+}
+.containercar {
+  @include position (relative);
+  background-image: url("../img/car.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 480px;
+  display: block;
+  margin-top: 20px;
+}
 .overlay {
   @include position (absolute);
   top: 0;
@@ -364,10 +396,22 @@ h2:hover
   background-color: $colorrgbahover;
 }
 
-.container:hover .overlay {
+.containercar:hover
+.overlay {
   opacity: 0.7;
 }
-
+.containerwood:hover
+.overlay {
+  opacity: 0.7;
+}
+.containerbear:hover
+.overlay {
+  opacity: 0.7;
+}
+.containerstreet:hover
+.overlay {
+  opacity: 0.7;
+}
 .hovertext {
   color: $colorwhite;
   font-size: $fonts18;
