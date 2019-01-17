@@ -360,16 +360,14 @@ aside {
     font-size: 24px;
     padding-top: 75px;
     padding-bottom: 30px;
-    width: 1200px;
     font-family: 'Roboto-r'; }
   .containerway h2:hover {
     color: #000000;
     cursor: pointer; }
   .containerway .divinput {
     max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    background: aqua; }
+    widows: 95%;
+    margin: auto; }
   .containerway .input {
     width: 65%;
     height: 50px;
@@ -495,7 +493,7 @@ aside {
   .containerteam h2 {
     font-size: 36px;
     color: #868686;
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 30px;
     text-align: center;
     letter-spacing: 12px;
@@ -504,7 +502,7 @@ aside {
   .containerteam p {
     font-size: 24px;
     color: #868686;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
     text-align: center;
     word-spacing: 7px;
     letter-spacing: 2px;
@@ -551,17 +549,18 @@ aside {
     width: 180px;
     font-family: 'Roboto-r'; }
   .containerteam .hovertextii {
-    width: 180px;
     color: #FFFFFF;
     font-size: 24px;
     position: absolute;
-    top: 27%;
+    top: 25%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-family: 'Roboto-r'; }
+    font-family: 'Roboto-r';
+    text-align: center;
+    width: 300px; }
   .containerteam .iconsf {
     height: 30px;
     display: block;

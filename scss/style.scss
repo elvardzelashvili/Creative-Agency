@@ -275,7 +275,6 @@ h2
   font-size: $fonts24;
   padding-top: 75px;
   padding-bottom: 30px;
-  width: 1200px;
   font-family: 'Roboto-r';
 
 }
@@ -287,9 +286,8 @@ h2:hover
 }
 .divinput {
    max-width: 1200px;
-   width:$width100;
+   widows: $width95;;
    margin: auto;
-   background: aqua;
 }
 
 .input {
@@ -437,7 +435,7 @@ h2:hover
   h2 {
     font-size: $fonts36;
     color: $colorgrey;
-    padding-top:90px;
+    padding-top:60px;
     padding-bottom: 30px;
     text-align: $text-alignc;
     letter-spacing: $letter-spacing12;
@@ -449,7 +447,7 @@ h2:hover
   {
     font-size: $fonts24;
     color: $colorgrey;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
     text-align: $text-alignc;
     word-spacing: $word-spacing7;;
     letter-spacing: $letter-spacing2;
@@ -510,15 +508,16 @@ p:hover,
   }
   
   .hovertextii {
-    width: 180px;
     color: $colorwhite;
     font-size: $fonts24;
     @include position (absolute);
-    top: 27%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
      @include text-transform (uppercase);
     font-family: 'Roboto-r';
+    text-align: center;
+    width: 300px;
 
   }
 
