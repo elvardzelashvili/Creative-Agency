@@ -111,6 +111,14 @@ header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containe
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+.containerbear:hover, .containerwood:hover, .containerstreet:hover, .containercar:hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s; }
+
 @font-face {
   font-family: 'Roboto-l';
   src: url(../fonts/Roboto-Light.ttf);
@@ -314,6 +322,15 @@ aside {
   margin-left: auto;
   margin-right: auto; }
 
+.arrow:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  border: 2px solid #ccf2ff; }
+
 #sectionblue {
   width: 100%; }
 
@@ -476,7 +493,7 @@ aside {
 
 .hovertext {
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 24px;
   position: absolute;
   top: 80%;
   left: 45%;

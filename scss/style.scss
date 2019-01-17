@@ -202,7 +202,11 @@ h3 {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto}
-
+.arrow:hover {
+  transition: 1s;
+  transform: scale(1.5);
+  border: 2px solid $colorhoverpark;
+}
 // fisrts section ends
 #sectionblue 
 {
@@ -359,6 +363,22 @@ h2:hover
   display: block;
   margin-top: 20px;
 }
+.containerbear:hover {
+  @extend %hoverimages;
+
+}
+.containerwood:hover {
+  @extend %hoverimages;
+
+}
+.containerstreet:hover {
+  @extend %hoverimages;
+
+}
+.containercar:hover {
+  @extend %hoverimages;
+
+}
 .containerstreet {
   @include position (relative);
   background-image: url("../img/street.jpg");
@@ -412,7 +432,7 @@ h2:hover
 }
 .hovertext {
   color: $colorwhite;
-  font-size: $fonts18;
+  font-size: $fonts24;
   @include position (absolute);;
   top: 80%;
   left: 45%;

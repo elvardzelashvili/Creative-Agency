@@ -41,3 +41,9 @@
 {align-content: center;
 display: flex;
 flex-wrap: wrap;}
+
+
+%hoverimages {
+  transform: scale(0.95);
+  transition: 2s;
+}
