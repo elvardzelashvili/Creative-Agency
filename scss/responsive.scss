@@ -1,3 +1,28 @@
+@media only screen and (min-width: 1440px)
+ {
+  .containerimages {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .containerwood
+    {
+      width: 25%;
+    }
+    .containerbear {
+      width: 25%;
+    }
+    .containerstreet {
+      width: 25%;
+    }
+    .containercar {
+      width: 25%;
+    }
+  }
+
+}
+
+
+
 @media only screen and (max-width: 1200px) {
 
   .containerteamcenter {
@@ -9,18 +34,17 @@
     .sectionbluecenter 
   { 
     justify-content: space-around;
-    width: 87%;
-  
     
   .firstblue{
-  margin-right: 40px;
-  margin-left: 41px;
-  height: 400px;}
+  width: 34%;
+  height: 350px;}
   h2{
     font-size: $fonts24;
+    width: 100%;
   }
   p{
     font-size: $fonts16;
+    width: 100%;
   }
   }
 
@@ -71,9 +95,9 @@
   width: 100%;
 }
 }
-.sectionbluecenter {
-  width: 95%;
-   }
+// .sectionbluecenter {
+//   width: 95%;
+//    }
 .containerteam {
   p {
     font-size: 18px;
@@ -132,7 +156,6 @@
   .sectionbluecenter 
   {  
         .firstblue {
-            height: 300px;
             margin-left: auto;
             margin-right: auto;
         h2{
@@ -176,6 +199,7 @@ header  {
   { 
   .firstblue {
         height: 270px;
+        width: 270px;
       }
   }
 .containerway 
@@ -183,18 +207,7 @@ header  {
   h2 {
    font-size: $fonts18;
 }
-    .divinput {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      
-    }
-    .input {
-      float: none;
-    }
-    .inputsubmit {
-      float: none;
-    }
+    
 }
   .bgpark  {
   h4 {

@@ -215,7 +215,7 @@ h3 {
 }
 .sectionbluecenter {
  @extend %marginmaxa;
- width:$width95;;
+ width:$width95;
  @extend %flex-container;
   
   
@@ -294,7 +294,7 @@ h2:hover
 }
 .divinput {
    max-width: 1200px;
-   widows: $width95;;
+   width: $width100;
    margin: auto;
 }
 
