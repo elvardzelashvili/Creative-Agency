@@ -204,9 +204,10 @@ h3 {
   margin-right: auto}
 
 .arrow:hover {
-  transition: 1s;
+  background: $colorrgbahover;
+  transition: 0.6s;
   transform: scale(1.1);
-  border: 2px solid $colorhoverpark;
+  border: 3px solid $colorrgbabginput;
 }
 // fisrts section ends
 #sectionblue 
