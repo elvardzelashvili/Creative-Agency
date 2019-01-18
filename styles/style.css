@@ -326,9 +326,9 @@ aside {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
   border: 2px solid #ccf2ff; }
 
 #sectionblue {
@@ -340,6 +340,13 @@ aside {
     width: 45px;
     height: 45px;
     margin: 25px; }
+  .sectionbluecenter .arrow:hover img {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
   .sectionbluecenter .firstblue {
     width: 270px;
     height: 470px; }
