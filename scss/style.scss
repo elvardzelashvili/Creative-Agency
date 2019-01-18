@@ -205,7 +205,7 @@ h3 {
 
 .arrow:hover {
   transition: 1s;
-  transform: scale(1.2);
+  transform: scale(1.1);
   border: 2px solid $colorhoverpark;
 }
 // fisrts section ends
@@ -225,7 +225,10 @@ img {
   margin: 25px;
   
 }
-
+.arrow:hover img{
+  transition: 1s;
+  transform: scale(1.5);
+}
 
 .firstblue {
   width: 270px;
