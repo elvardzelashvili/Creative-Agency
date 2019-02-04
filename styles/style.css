@@ -160,7 +160,7 @@ header {
   align-items: center;
   margin-top: 35px;
   margin-bottom: 35px;
-  width: 97%;
+  width: 95%;
   position: relative; }
   header li {
     margin-left: 40px; }
@@ -385,9 +385,6 @@ aside {
     padding-top: 75px;
     padding-bottom: 30px;
     font-family: 'Roboto-r'; }
-  .containerway h2:hover {
-    color: #000000;
-    cursor: pointer; }
   .containerway .divinput {
     max-width: 1200px;
     width: 100%;
@@ -418,7 +415,7 @@ aside {
     float: right; }
   .containerway .inputsubmit:hover {
     border: 1px solid #00bfff;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.7);
     color: black;
     cursor: pointer; }
 
@@ -487,16 +484,16 @@ aside {
   background-color: rgba(62, 198, 255, 0.7); }
 
 .containercar:hover .overlay {
-  opacity: 0.7; }
+  opacity: 1; }
 
 .containerwood:hover .overlay {
-  opacity: 0.7; }
+  opacity: 1; }
 
 .containerbear:hover .overlay {
-  opacity: 0.7; }
+  opacity: 1; }
 
 .containerstreet:hover .overlay {
-  opacity: 0.7; }
+  opacity: 1; }
 
 .hovertext {
   color: #FFFFFF;
@@ -545,7 +542,7 @@ aside {
   .containerteam .teamimages {
     height: 274px; }
   .containerteam .overlayteam:hover {
-    opacity: 0.7; }
+    opacity: 1; }
   .containerteam .overlayteam {
     position: absolute;
     top: 0;
@@ -609,6 +606,7 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   opacity: 0.67;
   width: 100%;
   height: 630px;
@@ -696,16 +694,26 @@ aside {
     cursor: pointer; }
   #packagelists .hoverpack:hover h2 {
     color: #FFFFFF;
-    background: #3EC6FF; }
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
   #packagelists .hoverpack:hover h3 {
     color: #FFFFFF;
-    background: #3EC6FF; }
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
   #packagelists .hoverpack:hover a {
     color: #868686;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
   #packagelists .hoverpack:hover {
     color: #FFFFFF;
-    background: #3EC6FF; }
+    background: #3EC6FF;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
   #packagelists ul {
     text-align: center;
     margin-top: 30px; }
@@ -772,11 +780,9 @@ aside {
     margin-left: 10%; }
   .centerdiv .inputsection:hover {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.4);
     border: 1px solid #00bfff; }
   .centerdiv .message:hover {
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.4);
     border: 1px solid #00bfff; }
   .centerdiv .message {
     height: 114px;
@@ -807,7 +813,7 @@ aside {
   .centerdiv .inputsubmits:hover {
     border: 1px solid #00bfff;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.7);
     color: black; }
 
 .copyright {
@@ -899,13 +905,13 @@ a:active h4 {
 
 @media only screen and (max-width: 992px) {
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header ul {
+      display: none; }
+  .menu {
+    display: block; }
   .containerteamcenter {
     width: 80%; }
   #packagelists .packagelistscenter .package {
@@ -922,10 +928,8 @@ a:active h4 {
   margin-top: 20px; }
 
 @media only screen and (max-width: 768px) {
-  header {
-    max-width: 600px; }
-    header ul {
-      display: none; }
+  header ul {
+    display: none; }
   .containerimages {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -935,8 +939,6 @@ a:active h4 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .menu {
-    display: block; }
   .dropdown-content a {
     float: none;
     color: black;
@@ -962,8 +964,12 @@ a:active h4 {
     font-size: 14px; } }
 
 @media only screen and (max-width: 480px) {
-  header a {
-    margin-bottom: 10px; }
+  header {
+    width: 95%; }
+    header a {
+      font-size: 24px; }
+  .menu {
+    margin-left: 0px; }
   .dropdown-content-search {
     top: 98%; }
   .dropdown-content {

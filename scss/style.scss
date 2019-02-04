@@ -12,7 +12,7 @@ header {
   align-items: center;
   margin-top: 35px;
   margin-bottom: 35px;
-  width: 97%;
+  width: 95%;
   @include position (relative);
 
 .hdiv{
@@ -287,11 +287,7 @@ h2
 
 }
 
-h2:hover
-{
-  color: $colorhhover;
-  cursor: pointer;
-}
+
 .divinput {
    max-width: 1200px;
    width: $width100;
@@ -420,19 +416,19 @@ h2:hover
 
 .containercar:hover
 .overlay {
-  opacity: 0.7;
+  opacity: 1;
 }
 .containerwood:hover
 .overlay {
-  opacity: 0.7;
+  opacity: 1;
 }
 .containerbear:hover
 .overlay {
-  opacity: 0.7;
+  opacity: 1;
 }
 .containerstreet:hover
 .overlay {
-  opacity: 0.7;
+  opacity: 1;
 }
 .hovertext {
   color: $colorwhite;
@@ -502,7 +498,7 @@ p:hover,
 }
 
 .overlayteam:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 .overlayteam
 {
@@ -576,6 +572,7 @@ p:hover,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   opacity: 0.67;
   width:$width100;
   height: 630px;
@@ -706,23 +703,24 @@ p:hover,
   }
   .hoverpack:hover h2{
     color: $colorwhite;
-    background: $colorhover;
-    
+    transition: 2s;
+
   }
   .hoverpack:hover h3 {
     color: $colorwhite;
-    background: $colorhover;
- 
+    transition: 2s;
   }
   .hoverpack:hover a {
     color: $colorgrey;
     background: $colorwhite;
- 
+    transition: 2s;
   }
  
   .hoverpack:hover {
     color: $colorwhite;
     background: $colorhover;
+    transition: 2s;
+
   }
 
  
@@ -817,12 +815,10 @@ li {
 
 .inputsection:hover {
   cursor: pointer;
-  background: $colorrgbabg;
   border: 1px solid $colorhoverinput;
 }
 .message:hover {
   cursor: pointer;
-  background: $colorrgbabg;
   border: 1px solid $colorhoverinput;
  }
  
@@ -919,7 +915,6 @@ background-color: yellow;
 #back2Top:hover {
   background: $colorrgbahover ;
   color: $colorgrey;
-
 }
 
 @import 'responsive.scss';
