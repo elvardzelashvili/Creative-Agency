@@ -360,7 +360,8 @@ aside {
     font-size: 14px;
     color: #868686;
     font-family: 'Roboto-r';
-    text-align: center; }
+    text-align: center;
+    line-height: 18px; }
   .sectionbluecenter h2:hover,
   .sectionbluecenter p:hover {
     color: #000000;
@@ -527,7 +528,8 @@ aside {
     text-align: center;
     word-spacing: 7px;
     letter-spacing: 2px;
-    font-family: 'Roboto-r'; }
+    font-family: 'Roboto-r';
+    line-height: 24px; }
   .containerteam h2:hover,
   .containerteam p:hover {
     color: #000000;
@@ -962,7 +964,11 @@ a:active h4 {
     .sectionbluecenter .firstblue p {
       font-size: 14px; }
   .bgpark p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .containerway h2 {
+    font-size: 24px;
+    width: 95%;
+    text-align: center; } }
 
 @media only screen and (max-width: 480px) {
   header {
@@ -984,10 +990,6 @@ a:active h4 {
   .sectionbluecenter .firstblue {
     height: 270px;
     width: 270px; }
-  .containerway h2 {
-    font-size: 18px;
-    width: 95%;
-    text-align: center; }
   .bgpark h4 {
     margin-bottom: 70px; }
   .bgpark .fb {
@@ -1009,4 +1011,8 @@ a:active h4 {
 
 @media only screen and (max-width: 320px) {
   .sectionbluecenter p {
-    width: 95%; } }
+    width: 95%; }
+  .containerway h2 {
+    font-size: 18px; }
+  .containerteam h2 {
+    font-size: 30px; } }

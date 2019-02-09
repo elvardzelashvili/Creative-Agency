@@ -167,7 +167,14 @@
       font-size: $fonts14;
         }    
   }
- 
+  .containerway 
+  {
+    h2 {
+     font-size: $fonts24;
+     width: 95%;
+     text-align: center;
+  }
+}
   }
 
   @media only screen and (max-width: 480px) 
@@ -201,15 +208,7 @@ header
         width: 270px;
       }
   }
-.containerway 
-{
-  h2 {
-   font-size: $fonts18;
-   width: 95%;
-   text-align: center;
-}
-    
-}
+
   .bgpark  {
   h4 {
     margin-bottom: 70px;
@@ -243,5 +242,17 @@ header
 .sectionbluecenter p {
   
     width: 95%;
+}
+
+.containerway 
+{
+  h2 {
+   font-size: $fonts18;
+  
+}
+    
+}
+.containerteam h2 {
+  font-size: 30px;
 }
 }
