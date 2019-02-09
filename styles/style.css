@@ -98,7 +98,7 @@ header, header .hdiv, header ul, .sectionbluecenter, #packagelists .packagelists
   -ms-flex-align: center;
   align-items: center; }
 
-header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containerteam .centerteam, .containerteam .containerteamcenter, #bgpark .parkcenter, #packagelists .packagelistscenter, .copyright .centercopy {
+header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containerteam .centerteam, .containerteam .div95, .containerteam .containerteamcenter, #bgpark .parkcenter, #packagelists .packagelistscenter, .copyright .centercopy {
   max-width: 1200px;
   margin: auto; }
 
@@ -509,6 +509,8 @@ aside {
 .containerteam {
   width: 100%;
   margin-top: 60px; }
+  .containerteam .div95 {
+    width: 95%; }
   .containerteam h2 {
     font-size: 36px;
     color: #868686;
@@ -983,7 +985,9 @@ a:active h4 {
     height: 270px;
     width: 270px; }
   .containerway h2 {
-    font-size: 18px; }
+    font-size: 18px;
+    width: 95%;
+    text-align: center; }
   .bgpark h4 {
     margin-bottom: 70px; }
   .bgpark .fb {
@@ -999,4 +1003,10 @@ a:active h4 {
     width: 100%;
     left: 0;
     padding-top: 30px;
-    position: relative; } }
+    position: relative; }
+  .margincenter h1 {
+    font-size: 24px; } }
+
+@media only screen and (max-width: 320px) {
+  .sectionbluecenter p {
+    width: 95%; } }

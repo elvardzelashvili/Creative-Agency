@@ -205,6 +205,8 @@ header
 {
   h2 {
    font-size: $fonts18;
+   width: 95%;
+   text-align: center;
 }
     
 }
@@ -233,5 +235,13 @@ header
     padding-top: 30px;
     @include position (relative);
 }
-
+.margincenter h1 {
+  font-size: 24px;
+}
+}
+@media only screen and (max-width: 320px) {
+.sectionbluecenter p {
+  
+    width: 95%;
+}
 }

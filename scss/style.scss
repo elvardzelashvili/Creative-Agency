@@ -452,6 +452,12 @@ h2
    @extend %marginmaxa;
   }
 
+  .div95 {
+    @extend %marginmaxa;
+    width: 95%;
+
+  }
+
   h2 {
     font-size: $fonts36;
     color: $colorgrey;
