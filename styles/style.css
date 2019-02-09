@@ -392,6 +392,14 @@ aside {
     font-family: 'Roboto-r';
     float: left;
     outline: none; }
+  .containerway .input::-webkit-input-placeholder {
+    color: white; }
+  .containerway .input:-ms-input-placeholder {
+    color: white; }
+  .containerway .input::-ms-input-placeholder {
+    color: white; }
+  .containerway .input::placeholder {
+    color: white; }
   .containerway .input:hover {
     border: 1px solid #00bfff; }
   .containerway .inputsubmit {
@@ -777,6 +785,14 @@ aside {
     text-transform: capitalize;
     margin-left: 10%;
     outline: none; }
+  .centerdiv .inputsection::-webkit-input-placeholder {
+    color: white; }
+  .centerdiv .inputsection:-ms-input-placeholder {
+    color: white; }
+  .centerdiv .inputsection::-ms-input-placeholder {
+    color: white; }
+  .centerdiv .inputsection::placeholder {
+    color: white; }
   .centerdiv .inputsection:hover {
     cursor: pointer;
     border: 1px solid #00bfff; }
@@ -798,6 +814,14 @@ aside {
     width: 80%;
     margin-left: 10%;
     outline: none; }
+  .centerdiv .message::-webkit-input-placeholder {
+    color: white; }
+  .centerdiv .message:-ms-input-placeholder {
+    color: white; }
+  .centerdiv .message::-ms-input-placeholder {
+    color: white; }
+  .centerdiv .message::placeholder {
+    color: white; }
   .centerdiv .inputsubmits {
     background-color: #3EC6FF;
     color: #FFFFFF;

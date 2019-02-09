@@ -308,6 +308,9 @@ h2
   float: left;
   outline:none;
 }
+.input::placeholder{
+  color: white;
+}
 .input:hover {
   border: 1px solid $colorhoverinput;
 }
@@ -824,7 +827,9 @@ li {
   margin-left: 10%;
   outline:none;
 
-
+}
+.inputsection::placeholder {
+  color:white;
 }
 
 .inputsection:hover {
@@ -853,6 +858,10 @@ li {
   outline:none;
 
 }
+.message::placeholder {
+  color:white;
+}
+
 .inputsubmits {
   background-color: $colorhover;
   color: $colorwhite;
