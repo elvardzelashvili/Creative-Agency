@@ -112,9 +112,6 @@ header, .margincenter, .sectionbluecenter, .containerway .sectionnews, .containe
   flex-wrap: wrap; }
 
 .containerbear:hover, .containerwood:hover, .containerstreet:hover, .containercar:hover {
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s; }
@@ -500,7 +497,7 @@ aside {
   font-size: 24px;
   position: absolute;
   top: 80%;
-  left: 45%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -628,7 +625,8 @@ aside {
     color: #ccf2ff;
     cursor: pointer; }
   #bgpark .parkcenter {
-    padding-top: 190px; }
+    padding-top: 190px;
+    width: 95%; }
   #bgpark .fb {
     width: 100px;
     height: 100px;
