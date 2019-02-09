@@ -98,7 +98,7 @@ aside {
   background: $colorwhite;
   height:30px;
   display: none;
-  border-radius: 7px;
+  border-radius: $borderr7;
   border: 1px solid $colorhover;
 }
 
@@ -300,7 +300,7 @@ h2
   width: 65%;
   height: 50px;
   border: 1px solid $colorwhite;
-  border-radius: $borderr5;
+  border-radius: $borderr10;
   color: $colorwhite;
   font-size: $fonts18;
   background:$colortransp;
@@ -316,7 +316,7 @@ h2
   color: $colorwhite;
   border: none;
   height: 50px;
-  border-radius: $borderr5;
+  border-radius: $borderr10;
   font-family: 'Roboto-r';
   font-size: $fonts18;
   border: 1px solid $colorwhite;
@@ -662,7 +662,7 @@ p:hover,
   }
   a {
     color: $colorgrey;
-     @include text-transform (capitalize);
+    @include text-transform (capitalize);
     font-family: 'Roboto-r';
 
   }
@@ -705,6 +705,8 @@ p:hover,
     padding-bottom:15px;
     text-align: $text-alignc;
     font-family: 'Roboto-r';
+    border-radius: $borderr10;
+
   }
  
   .hoverpack {
@@ -810,7 +812,7 @@ li {
 .inputsection {
   width:$width80;;
   height: 50px;
-  border-radius: $borderr5;
+  border-radius: $borderr10;
   font-size: $fonts18;
   background: $colorrgbainputsection;
   padding-left: 20px;
@@ -834,7 +836,7 @@ li {
  
 .message {
   height: 114px;
-  border-radius: $borderr5;
+  border-radius: $borderr10;
   font-size: $fonts18;
   background: $colorrgbainputsection;
   padding-left: 20px;
@@ -853,7 +855,7 @@ li {
   color: $colorwhite;
   border: 1px solid $colorwhite;
   height: 50px;
-  border-radius: $borderr5;
+  border-radius: $borderr10;
   width:$width80;;
   margin-left: 10%;
   font-size: $fonts18;
@@ -917,7 +919,7 @@ background-color: yellow;
   text-align: center;
   font-size: 30px;
   text-decoration: none;
-   border-radius: 50px;
+  border-radius: 50px;
   color: $colorwhite;
   background-color: $colorhoverinput;
 
