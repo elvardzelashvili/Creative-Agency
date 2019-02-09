@@ -85,7 +85,7 @@ aside {
 }
 .dropdown:hover .dropdown-content-search {
   display: block;
-  transition: 3s;
+  transition: $transition3;
 }
 
 .dropdown:hover .searchtext {
@@ -194,21 +194,7 @@ h3 {
 }
 }
 
-.arrow{
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: #3EC6FF;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto}
 
-.arrow:hover {
-  background: $colorrgbahover;
-  transition: 0.6s;
-  transform: scale(1.1);
-  border: 3px solid $colorrgbabginput;
-}
 // fisrts section ends
 #sectionblue 
 {
@@ -226,8 +212,21 @@ img {
   margin: 25px;
   
 }
+.arrow{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #3EC6FF;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto}
+
+.arrow:hover {
+  background: $colorrgbahover;
+  border: 3px solid rgba(62, 198, 255, 0.7);}
+
 .arrow:hover img{
-  transition: 1s;
+  transition: $transition1;
   transform: scale(1.2);
 }
 
@@ -413,7 +412,7 @@ h2
   height: 100%;
   width:$width100;
   opacity: 0;
-  transition: .4s ease;
+  transition: $transition04 ease;
   background-color: $colorrgbahover;
 }
 
@@ -521,7 +520,7 @@ p:hover,
   height: 100%;
   width:$width100;
   opacity: 0;
-  transition: .4s ease;
+  transition: $transition04 ease;
   background-color: $colorrgbahover;
 }
   .hovertexti {
@@ -717,23 +716,23 @@ p:hover,
   }
   .hoverpack:hover h2{
     color: $colorwhite;
-    transition: 2s;
+    transition: $transition2;
 
   }
   .hoverpack:hover h3 {
     color: $colorwhite;
-    transition: 2s;
+    transition: $transition2;
   }
   .hoverpack:hover a {
     color: $colorgrey;
     background: $colorwhite;
-    transition: 2s;
+    transition: $transition2;
   }
  
   .hoverpack:hover {
     color: $colorwhite;
     background: $colorhover;
-    transition: 2s;
+    transition: $transition2;
 
   }
 
@@ -757,7 +756,6 @@ p:hover,
 }
 
 // package lists ends
-
 
 // last section starts 
 #lastsection {
