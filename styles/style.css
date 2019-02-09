@@ -398,7 +398,8 @@ aside {
     background: transparent;
     padding-left: 20px;
     font-family: 'Roboto-r';
-    float: left; }
+    float: left;
+    outline: none; }
   .containerway .input:hover {
     border: 1px solid #00bfff; }
   .containerway .inputsubmit {
@@ -411,7 +412,8 @@ aside {
     font-size: 18px;
     border: 1px solid #FFFFFF;
     width: 30%;
-    float: right; }
+    float: right;
+    outline: none; }
   .containerway .inputsubmit:hover {
     border: 1px solid #00bfff;
     background: rgba(255, 255, 255, 0.7);
@@ -781,7 +783,8 @@ aside {
     border: 1px solid #FFFFFF;
     font-family: 'Roboto-r';
     text-transform: capitalize;
-    margin-left: 10%; }
+    margin-left: 10%;
+    outline: none; }
   .centerdiv .inputsection:hover {
     cursor: pointer;
     border: 1px solid #00bfff; }
@@ -801,7 +804,8 @@ aside {
     font-family: 'Roboto-r';
     text-transform: capitalize;
     width: 80%;
-    margin-left: 10%; }
+    margin-left: 10%;
+    outline: none; }
   .centerdiv .inputsubmits {
     background-color: #3EC6FF;
     color: #FFFFFF;
@@ -813,7 +817,8 @@ aside {
     font-size: 18px;
     font-family: 'Roboto-r';
     text-transform: capitalize;
-    font-size: 18px; }
+    font-size: 18px;
+    outline: none; }
   .centerdiv .inputsubmits:hover {
     border: 1px solid #00bfff;
     cursor: pointer;
