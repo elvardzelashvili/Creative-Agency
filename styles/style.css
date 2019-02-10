@@ -937,6 +937,20 @@ a:active h4 {
       display: none; }
   .menu {
     display: block; }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 18px; }
+  .dropdownmenu:hover .dropdown-content {
+    display: block; }
+  .dropdownmenu:hover .dropdown-content a {
+    display: block; }
+  .dropdown-content {
+    width: 100%;
+    left: 0%;
+    top: 90%; }
   .containerteamcenter {
     width: 80%; }
   #packagelists .packagelistscenter .package {
@@ -964,20 +978,6 @@ a:active h4 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 10px 10px;
-    text-align: left;
-    font-size: 18px; }
-  .dropdownmenu:hover .dropdown-content {
-    display: block; }
-  .dropdownmenu:hover .dropdown-content a {
-    display: block; }
-  .dropdown-content {
-    width: 100%;
-    left: 0%;
-    top: 90%; }
   .sectionbluecenter .firstblue {
     margin-left: auto;
     margin-right: auto; }
