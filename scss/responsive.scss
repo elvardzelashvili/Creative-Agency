@@ -21,8 +21,6 @@
 
 }
 
-
-
 @media only screen and (max-width: 1200px) {
 
   .containerteamcenter {
@@ -59,9 +57,8 @@
   
   }
 
-  @media only screen and (max-width: 992px) 
-  {
-   
+@media only screen and (max-width: 992px) 
+  {  
   header 
   { 
     justify-content: space-between;
@@ -70,11 +67,11 @@
       display: none;
     }
 }
-.menu {
+  .menu {
   display: block;
        }
 
- .containerteamcenter {
+  .containerteamcenter {
   width: 80%;
 }
 
@@ -88,18 +85,18 @@
   }
 
 }
-.message {
+  .message {
   width: 100%;
 }
-.inputsubmits {
+  .inputsubmits {
   width: 100%;
 }
 }
 
-.containerteam {
-  p {
-    font-size: 18px;
-  }
+  .containerteam {
+    p {
+      font-size: 18px;
+    }
 
   .containerteamcenter {
     .centerhover {
@@ -126,7 +123,7 @@
  
 
 
- .dropdown-content a {
+  .dropdown-content a {
     float: none;
     color: black;
     padding: 10px 10px;
@@ -142,7 +139,6 @@
     display: block;
   }
   .dropdown-content {
-  
     width: 100%;
     left: 0%;
     top: 90%;
@@ -162,7 +158,7 @@
       }
   }
 
-.bgpark{
+  .bgpark{
     p{
       font-size: $fonts14;
         }    
@@ -179,14 +175,14 @@
 
   @media only screen and (max-width: 480px) 
   {
-header  
+   header  
      
 {width: 95%;
       a {
       font-size: $fonts24;
        }
 }
-.menu {
+  .menu {
   margin-left: 0px;
 }
   .dropdown-content-search {
@@ -234,7 +230,7 @@ header
     padding-top: 30px;
     @include position (relative);
 }
-.margincenter h1 {
+  .margincenter h1 {
   font-size: 24px;
 }
 }
@@ -249,8 +245,7 @@ header
   h2 {
    font-size: $fonts18;
   
-}
-    
+} 
 }
 .containerteam h2 {
   font-size: 30px;

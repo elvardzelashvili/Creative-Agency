@@ -15,7 +15,7 @@ header {
   width: 95%;
   @include position (relative);
 
-.hdiv{
+  .hdiv{
     @extend %flex-container;
   }
   ul{
@@ -26,21 +26,19 @@ header {
     margin-left: 40px;
   }
 
-a {
+  a {
   font-size: $fonts36;
   color: $colorhover;
   font-family: 'Roboto-l';
-}
+  }
 
 }
-.span
-{
+  .span {
   font-family: 'Roboto-b';
 
-}
- nav 
- {
-    a {
+  }
+nav  {
+  a {
     color: $colorgrey;
     font-size: $fonts18;
     font-family: 'Roboto-r';
@@ -52,47 +50,46 @@ a {
   }
   
 }
-aside {
+  aside {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-}
-.searchimg {
+ }
+  .searchimg {
   height: 24px;
   width: 24px;
   margin-left: 40px;
-}
+ }
 
-.dropdown {
+  .dropdown {
   overflow: hidden;
- 
-}
+ }
 
-.dropdown .dropbtn {
+  .dropdown .dropbtn {
   border: 1px solid $colorwhite;
   outline: none;
   color: $colorwhite;
-}
-.dropdown-content-search {
+ }
+  .dropdown-content-search {
   background-color: #f9f9f9;
   z-index: 1;
   display: none;
   right: 1%;
   top: 95%;
   @include position (absolute);
-}
-.dropdown:hover .dropdown-content-search {
+ }
+  .dropdown:hover .dropdown-content-search {
   display: block;
   transition: $transition3;
-}
+ }
 
-.dropdown:hover .searchtext {
+ .dropdown:hover .searchtext {
   display: block;
-}
+ }
 
-.searchtext {
+ .searchtext {
   font-size: 18px;
   color: $colorgrey;
   background: $colorwhite;
@@ -103,7 +100,7 @@ aside {
 }
 
 
-.dropdownmenu {
+ .dropdownmenu {
   overflow: hidden;
   
 }
@@ -150,7 +147,6 @@ opacity: 0.4;
   @extend %marginmaxa;
   width:$width95;
   
-
 h1 {
   font-size:$fonts48;
   color: $colorwhite;
@@ -193,8 +189,6 @@ h3 {
 
 }
 }
-
-
 // fisrts section ends
 #sectionblue 
 {
@@ -204,7 +198,6 @@ h3 {
  @extend %marginmaxa;
  width:$width95;
  @extend %flex-container;
-  
   
 img {
   width: 45px;
@@ -273,7 +266,6 @@ p:hover,
   opacity: 0.7;
   margin-bottom: 60px;
 
-
 .sectionnews {
   @extend %marginmaxa;
   width:$width95;;
@@ -287,7 +279,6 @@ h2
   font-family: 'Roboto-r';
 
 }
-
 
 .divinput {
    max-width: 1200px;
@@ -334,7 +325,6 @@ h2
   color: black;
   cursor: pointer;
 }
-
 }
 // container way ends
 
@@ -472,7 +462,6 @@ h2
     letter-spacing: $letter-spacing12;
     word-spacing: $word-spacing12;
     font-family: 'Roboto-r';
-
   }
   p 
   {
@@ -484,7 +473,6 @@ h2
     letter-spacing: $letter-spacing2;
     font-family: 'Roboto-r';
     line-height: 24px;
-
 
   }
 h2:hover,
@@ -618,7 +606,6 @@ p:hover,
     @extend %marginmaxa;
     padding-top:190px; 
     width: 95%;
-
   }
 
   .fb {
@@ -649,7 +636,6 @@ p:hover,
   margin-left: 20px;
  
 }
-
 // park section ends
 
 
@@ -739,8 +725,7 @@ p:hover,
 
   }
 
- 
-  ul {
+   ul {
     text-align: $text-alignc;
     margin-top:30px;
   }
@@ -757,7 +742,6 @@ p:hover,
     margin-bottom: 55px;
   }
 }
-
 // package lists ends
 
 // last section starts 
@@ -875,7 +859,6 @@ li {
   @include text-transform (capitalize);
   font-size: $fonts18;
   outline:none;
-
 
 }
 .inputsubmits:hover{
